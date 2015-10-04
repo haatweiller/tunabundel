@@ -1,0 +1,2 @@
+Bugs:
+[Michael, 20151013]- spatie voor \chord command, was eerst niet ::::: (20151016)Fixed bij commenting out the enter in the \chord command

@@ -1,0 +1,172 @@
+%%
+%% This file tunaChords.sty 
+%% is writen by Michael Heidweiller for
+%% The tuna bundle
+%% date of last modification 4-10-2015
+%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tunaChords}
+
+\RequirePackage[a4paper, portrait]{geometry}
+\RequirePackage{fancyhdr}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{paralist}
+\RequirePackage{tabularx}
+\RequirePackage{suffix}
+\RequirePackage{tocloft}
+\RequirePackage{color}
+\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[spanish]{babel}
+\RequirePackage{units}
+\RequirePackage{marginnote}
+\RequirePackage{changepage}
+\RequirePackage{ifthen}
+\RequirePackage[utf8]{inputenc}
+
+
+
+\newif\if@nocolor\@nocolorfalse
+\DeclareOption{color}{
+	\definecolor{default}{rgb}{1.0,0,0}
+	\@nocolorfalse
+}
+
+\DeclareOption{bw}{
+	\definecolor{default}{rgb}{0,0,0}
+	\@nocolortrue
+}
+
+\ExecuteOptions{color}
+\ProcessOptions\relax
+
+% command for chords above the text
+\newcommand\chord[2][l]{%
+	\makebox[0pt][#1]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{#2}\\\mbox{}\end{tabular}}%
+	\normalsize}
+
+% command for chords on the text
+\WithSuffix\newcommand\chord*[1]{%
+	\textbf{#1}}  
+
+
+\newcounter{songs}
+\setcounter{songs}{1}
+
+% song header added to TOC and with number
+\newcommand\song[2][default] {%
+	\begin{center}%
+	\LARGE %
+	\if@nocolor
+		\textbf{#2}
+	\else
+		\textcolor{#1}{\arabic{songs}. \textbf{#2}}
+	\fi
+	\end{center}
+	\addcontentsline{toc}{section}{\if@nocolor
+		\arabic{songs}. #2
+	\else
+		\textcolor{#1}{\arabic{songs}. #2}
+	\fi}%
+	\vspace{-12pt}
+	\stepcounter{songs}}
+
+% song header plain
+\WithSuffix\newcommand\song*[2][default] {%
+	\begin{center}%
+	\LARGE 
+	\if@nocolor
+		\textbf{#2}
+	\else
+		\textcolor{#1}{\textbf{#2}}
+	\fi
+	\end{center}}
+	
+% rhythm command
+\newcommand\rhythmandkey[3][\nicefrac{2}{4}] {%
+	\rmfamily
+	\vspace{-12pt}\hspace{-12pt}%
+	\scriptsize%
+	(\emph{\textbf{#1} #2} in #3)\par%
+	\normalsize\normalfont}
+
+\newlength{\vindent}
+\setlength{\vindent}{-1.5em}
+
+%verse command
+\renewenvironment{verse}[1]{%
+	{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{#1}}\vspace{-24pt}}
+	\list{}{
+		\addtolength{\leftmargin}{\vindent}}%
+		\item[]%
+}{\endlist}
+
+\newenvironment{instrumental}[1]{%
+	\newcommand{\measure}{}
+	{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{#1}}\vspace{-24pt}}
+}{}
+
+%pagestyle
+\setlength{\parskip}{3ex}
+\setlength{\parindent}{0pt}
+\setlength{\textheight}{674pt}
+\setlength{\textwidth}{426pt}
+\setlength{\headheight}{29pt}
+\setlength{\headsep}{2ex}
+\setlength{\voffset}{0pt}
+\setlength{\topmargin}{-25pt}
+\setlength{\marginparwidth}{5em}
+%\setlength{\headwidth}{0.75\paperwidth}
+\setlength{\hoffset}{0pt}
+\setlength{\marginparsep}{1em}
+
+\newlength{\myoddoffset}
+\setlength{\myoddoffset}{\marginparwidth plus \marginparsep}
+
+
+% lijn bij header
+\renewcommand{\headrulewidth}{1.8pt}
+\makeatletter
+\renewcommand{\headrule}{
+	\setlength\@tempdima{0pt}
+	\addtolength{\@tempdima}{\headwidth}
+	\textcolor{default}{\hspace{-100pt},\hrule\@height\headrulewidth\@width\@tempdima}
+	\textcolor{black}{\hrule\@height\headrulewidth\@width\@tempdima}
+	\textcolor{default}{\hrule\@height\headrulewidth\@width\@tempdima}
+}
+\makeatother
+
+% lijn bij footer
+\renewcommand{\footrulewidth}{0.9pt}
+\makeatletter
+\renewcommand{\footrule}{
+	\setlength\@tempdima{0pt}
+	\addtolength{\@tempdima}{\headwidth}
+	\textcolor{default}{\hrule\@height\footrulewidth\@width\@tempdima}
+	\textcolor{black}{\hrule\@height\footrulewidth\@width\@tempdima}
+	\textcolor{default}{\hrule\@height\footrulewidth\@width\@tempdima}
+}
+\makeatother
+
+%header and foot text
+\fancypagestyle{fancyplain}{
+	\fancyhf{}
+	\fancyheadoffset[leh,roh]{\myoddoffset}
+	\fancyheadoffset[loh,reh]{\marginparsep}
+	\fancyfootoffset[lef,rof]{\myoddoffset}
+	\fancyfootoffset[lof,ref]{\marginparsep}
+	\fancyhead[LE]{\hspace{2pt}\textbf{Cancions de Tuna}\hspace{2pt}}
+	\fancyhead[RO]{\hspace{2pt}\textbf{Tuna Ciudad de Luz}\hspace{2pt}}
+	\fancyfoot[LE,RO]{\hspace{2pt}\emph{\thepage}\hspace{2pt}}
+}
+
+\pagestyle{fancyplain}
+
+% code for index page
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% commands for the font
+\renewcommand*{\familydefault}{\sfdefault} %set to sans serif
+\renewcommand*\sfdefault{phv}
+
+\endinput
