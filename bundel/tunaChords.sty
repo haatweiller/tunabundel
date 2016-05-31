@@ -2,7 +2,7 @@
 %% This file tunaChords.sty 
 %% is writen by Michael Heidweiller for
 %% The tuna bundle
-%% date of last modification 18-04-2015
+%% date of last modification 19-04-2015
 %%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -31,16 +31,20 @@
 \RequirePackage{comment}
 \RequirePackage[pdfpagelayout=TwoPageRight]{hyperref}
 \RequirePackage[toc]{multitoc}
+\RequirePackage{graphicx}
 
 %%%% Options
+% show translation option
 \newif\ifshowtranslation\showtranslationfalse
 \DeclareOption{notranslation}{\showtranslationfalse}
 \DeclareOption{translation}{\showtranslationtrue}
 
+% color option TOC
 \newif\iffancytoc\fancytocfalse
 \DeclareOption{simpletoc}{\fancytocfalse}
 \DeclareOption{fancytoc}{\fancytoctrue}
 
+%%%%% color options
 \newif\if@nocolor\@nocolorfalse
 \DeclareOption{color}{
 	\definecolor{default}{rgb}{0,0,0}
@@ -76,6 +80,7 @@
 	\@nocolortrue
 }
 
+% default settings, document in color, showing translation and bw TOC
 \ExecuteOptions{color,translation, simpletoc}
 \ProcessOptions\relax
 
@@ -86,7 +91,6 @@
 \newcounter{measurerows}
 
 %% lenghts
-
 %pagestyle
 \newlength{\vindent}
 \setlength{\vindent}{-1.5em}
@@ -113,6 +117,7 @@
 
 \setlength{\arrayrulewidth}{1pt}
 
+% strip unit command
 \makeatletter
 \newcommand*{\stripunit}[1]{\strip@pt#1}
 \makeatother
@@ -128,22 +133,31 @@
 		\normalsize\normalfont%
 	}
 
+	% chord command
 	\DeclareDocumentCommand\chord{s m}{%
 		\IfBooleanTF{##1}{\footnotesize\textbf{##2}\normalsize}{%
 			\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##2}\\			\mbox{}\end{tabular}}\normalsize}%
 	}
 
+	% repetition command
 	\DeclareDocumentCommand\repetition{m}{%
 		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{0pt}}\\
 	}
 	
-	%verse command
+	%verse environment
 	\DeclareDocumentEnvironment{verse}{m}{%
 		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{-20pt}}
 		\list{}{\addtolength{\leftmargin}{\vindent}}%
 			\item[]%
 	}{\endlist\vspace{-18pt}}
+	
+	%sidenote environment
+	\DeclareDocumentEnvironment{sidenote}{m O{0.5\textwidth}}{%
+		\begin{tabular}{p{##2} | b{4em}}%
+	}{& ##1 \end{tabular}}
 
+
+	%code that song environment adds, commands need before this
 	\phantomsection
 	\IfBooleanTF{#1}{}{
 		\addcontentsline{toc}{section}{\if@nocolor
@@ -193,10 +207,13 @@
 		}
 	}%
 	
+	%commands before this
 	\hspace{\vnoffset}\textbf{#1}\\
 	\begin{tabular}[!htbp]{| *{#2}{p{\witdhdim pt} |}}%
 }{\end{tabular}}
 
+
+% translation environment
 \ifshowtranslation
   \DeclareDocumentEnvironment{translation}{s}{%
   	{\vspace{12pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{Vertaling:}}\vspace{-24pt}}
@@ -231,7 +248,7 @@
 }
 \makeatother
 
-%header and foot text
+%header and foot text / create page style fancyplain
 \fancypagestyle{fancyplain}{
 	\fancyhf{}
 	\fancyheadoffset[leh,roh]{\myoddoffset}
@@ -242,8 +259,6 @@
 	\fancyhead[RO]{\hspace{2pt}\textbf{Tuna Ciudad de Luz}\hspace{2pt}}
 	\fancyfoot[LE,RO]{\hspace{2pt}\emph{\thepage}\hspace{2pt}}
 }
-
-\pagestyle{fancyplain}
 
 % code for index page
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -257,6 +272,10 @@
 
 % setting amount of table of content columns
 \renewcommand*{\multicolumntoc}{2}
+% set page style of TOC
 \tocloftpagestyle{fancyplain}
+
+%set page style ot fancyplain
+\pagestyle{fancyplain}
 
 \endinput
