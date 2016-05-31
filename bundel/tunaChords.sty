@@ -2,7 +2,7 @@
 %% This file tunaChords.sty 
 %% is writen by Michael Heidweiller for
 %% The tuna bundle
-%% date of last modification 24-04-2015
+%% date of last modification 29-04-2015
 %%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -32,6 +32,7 @@
 \RequirePackage[pdfpagelayout=TwoPageRight]{hyperref}
 \RequirePackage[toc]{multitoc}
 \RequirePackage{graphicx}
+\RequirePackage{titlesec}
 
 %%%% Options
 % show translation option
@@ -172,6 +173,13 @@
 }
 \makeatother
 
+% chord command
+\DeclareDocumentCommand\chord{s m}{%
+	\IfBooleanTF{#1}{\footnotesize\textbf{#2}\normalsize}{%
+		\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{#2}\\			\mbox{}\end{tabular}}\normalsize}%
+}
+
+
 % song header added to TOC and with number
 \DeclareDocumentEnvironment{song}{s O{default} m} {%	
 	% rhythm command
@@ -183,12 +191,7 @@
 		\normalsize\normalfont%
 	}
 
-	% chord command
-	\DeclareDocumentCommand\chord{s m}{%
-		\IfBooleanTF{##1}{\footnotesize\textbf{##2}\normalsize}{%
-			\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##2}\\			\mbox{}\end{tabular}}\normalsize}%
-	}
-
+	
 	% repetition command
 	\DeclareDocumentCommand\repetition{m}{%
 		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{0pt}}\\
@@ -259,7 +262,7 @@
 	
 	%commands before this
 	\hspace{\vnoffset}\textbf{#1}\\
-	\begin{tabular}[!htbp]{| *{#2}{p{\witdhdim pt} |}}%
+	\begin{tabular}[!htbp]{| *{#2}{p{\witdhdim pt}@{} |}}%
 }{\end{tabular}}
 
 
@@ -282,6 +285,11 @@
 	\forLoop{1}{#1}{forloopI}{\vspace{1.1ex}\hfill\\\hline}
 	\end{tabular}
 }
+
+% Dashfill command, dotfill atlerd
+\makeatletter
+\newcommand \dashfill {\leavevmode \cleaders \hb@xt@ .33em{\hss -\hss }\hfill \kern \z@}
+\makeatother
 
 % lijn bij header
 \renewcommand{\headrulewidth}{1.8pt}
@@ -318,6 +326,11 @@
 	\fancyhead[RO]{\hspace{2pt}\textbf{Tuna Ciudad de Luz}\hspace{2pt}}
 	\fancyfoot[LE,RO]{\hspace{2pt}\emph{\thepage}\hspace{2pt}}
 }
+
+%edit section distances
+\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{8pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 % code for index page
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}

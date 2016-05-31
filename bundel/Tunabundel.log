@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.29)  29 APR 2016 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.29)  3 MAY 2016 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,58 +827,75 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \Gin@req@height=\dimen163
 \Gin@req@width=\dimen164
 )
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box69
+\beforetitleunit=\skip102
+\aftertitleunit=\skip103
+\ttl@plus=\dimen165
+\ttl@minus=\dimen166
+\ttl@toksa=\toks24
+\titlewidth=\dimen167
+\titlewidthlast=\dimen168
+\titlewidthfirst=\dimen169
+)
 \c@songs=\count158
 \c@measures=\count159
 \c@measurerows=\count160
 \c@forloopI=\count161
-\vindent=\skip102
-\instrumentalwidth=\skip103
-\myoddoffset=\skip104
-\vnoffset=\skip105
+\vindent=\skip104
+\instrumentalwidth=\skip105
+\myoddoffset=\skip106
+\vnoffset=\skip107
 .................................................
-. LaTeX info: "xparse/define-environment"
+. LaTeX info: "xparse/define-command"
 . 
-. Defining environment 'song' with sig. 's O{default} m' on line 228.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-environment"
-. 
-. Defining environment 'instrumental' with sig. 'm O{8}' on line 263.
+. Defining command \chord with sig. 's m' on line 180.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'translation' with sig. 's' on line 274.
+. Defining environment 'song' with sig. 's O{default} m' on line 231.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'instrumental' with sig. 'm O{8}' on line 266.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'translation' with sig. 's' on line 277.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \notition with sig. 'm' on line 284.
+. Defining command \notition with sig. 'm' on line 287.
 .................................................
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 330.
+(hyperref)                setting the option has no effect on input line 343.
 
-Package hyperref Info: Option `unicode' set `true' on input line 330.
+Package hyperref Info: Option `unicode' set `true' on input line 343.
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `pdftoolbar' set `false' on input line 330.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 330.
-Package hyperref Info: Option `pdffitwindow' set `true' on input line 330.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 330.
-Package hyperref Info: Option `colorlinks' set `true' on input line 330.
+Package hyperref Info: Option `pdftoolbar' set `false' on input line 343.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 343.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 343.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 343.
+Package hyperref Info: Option `colorlinks' set `true' on input line 343.
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip106
-\fb@frw=\dimen165
-\fb@frh=\dimen166
-\FrameRule=\dimen167
-\FrameSep=\dimen168
+\OuterFrameSep=\skip108
+\fb@frw=\dimen170
+\fb@frh=\dimen171
+\FrameRule=\dimen172
+\FrameSep=\dimen173
 ) (./Tunabundel.aux)
 \openout1 = `Tunabundel.aux'.
 
@@ -940,20 +957,20 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count162
-\scratchdimen=\dimen169
-\scratchbox=\box69
+\scratchdimen=\dimen174
+\scratchbox=\box70
 \nofMPsegments=\count163
 \nofMParguments=\count164
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks25
 \MPscratchCnt=\count165
-\MPscratchDim=\dimen170
+\MPscratchDim=\dimen175
 \MPnumerator=\count166
 \makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks25
+\everyMPtoPDFconversion=\toks26
 )
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-\AtBeginShipoutBox=\box70
+\AtBeginShipoutBox=\box71
 Package hyperref Info: Link coloring ON on input line 19.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1083,11 +1100,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1132,11 +1144,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1171,11 +1178,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1235,11 +1237,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1284,11 +1281,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1346,11 +1338,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1426,11 +1413,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1498,11 +1480,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1561,11 +1538,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 3.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 3.
 .................................................
 .................................................
@@ -1599,11 +1571,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1662,11 +1629,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1736,11 +1698,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1784,11 +1741,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1850,11 +1802,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -1909,11 +1856,6 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1988,11 +1930,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2050,11 +1987,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2099,11 +2031,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2203,11 +2130,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2272,11 +2194,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2348,11 +2265,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2417,11 +2329,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2480,11 +2387,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2533,11 +2435,6 @@ Overfull \hbox (4.49504pt too wide) in paragraph at lines 7--7
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2608,11 +2505,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2636,11 +2528,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2688,11 +2575,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2761,11 +2643,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -2847,11 +2724,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2910,11 +2782,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -2948,11 +2815,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3012,11 +2874,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3095,11 +2952,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3152,11 +3004,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3214,11 +3061,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3290,11 +3132,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3338,11 +3175,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3414,11 +3246,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3455,11 +3282,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 23.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 23.
 .................................................
 .................................................
@@ -3482,11 +3304,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3536,11 +3353,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3621,11 +3433,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3691,11 +3498,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3739,11 +3541,6 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -3807,11 +3604,6 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chord with sig. 's m' on line 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
 . Defining command \repetition with sig. 'm' on line 1.
 .................................................
 .................................................
@@ -3851,28 +3643,13 @@ Package babel Info: Redefining dutch shorthand "~
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \insertitem with sig. 'm' on line 4.
+. Defining command \insertitem with sig. 'm' on line 5.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 4.
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 5.
 .................................................
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
-\T1/phv/m/n/10 al-leen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
-\T1/phv/m/n/10 gi-taar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[]|\T1/phv/m/n/10 daarna
- []
-
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 42.
 Package babel Info: Redefining dutch shorthand "~
@@ -3881,17 +3658,12 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 42.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 42.
-[88]) (./songs/torero.tex
+ [88]) (./songs/torero.tex
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -4003,17 +3775,13 @@ Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 62.
  [90
 
-]) (./songs/tuna_de_ingenieros.tex
+])
+(./songs/tuna_de_ingenieros.tex
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -4045,18 +3813,12 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 1.
-)
-(./songs/venezuela.tex
+) (./songs/venezuela.tex
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \rhythmandkey with sig. 's O{\nicefrac {2}{4}} m m' on line
 . 1.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chord with sig. 's m' on line 1.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -4109,6 +3871,16 @@ Package babel Info: Redefining dutch shorthand "~
 . 
 . Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 3.
 .................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 40.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 40.
+.................................................
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 48.
 Package babel Info: Redefining dutch shorthand "~
@@ -4117,12 +3889,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 48.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 48.
- [94]) (./theory/theory.tex
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 1.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 1.
-)
+ [94])
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 83.
 Package babel Info: Redefining dutch shorthand "~
@@ -4131,22 +3898,452 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 83.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 83.
- [95]
-(./theory/akkoorden.tex
+
+[95
+
+]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 1.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 1.
-)
+(babel)             in language append on input line 83.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 84.
+(babel)             in language append on input line 83.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 84.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 84.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 84.
+(babel)             in language append on input line 83.
  [96
+
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 90.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 90.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 90.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 90.
+ [97] (./theory/theorie.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 32.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 32.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 32.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 32.
+ [98
+
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 89.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 89.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 89.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 89.
+ [99
+
+]
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 1| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 2| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 3| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 4| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 5| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 6| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--100
+[]|\T1/phv/m/n/7 7| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 100--101
+[]|\T1/phv/m/n/7 1| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +1| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--101
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 101--102
+[]|\T1/phv/m/n/7 +1| 
+ []
+
+
+Overfull \hbox (3.65399pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 C| 
+ []
+
+
+Overfull \hbox (3.65399pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 D| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 E| 
+ []
+
+
+Overfull \hbox (2.87701pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 F| 
+ []
+
+
+Overfull \hbox (4.04594pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 G| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 A| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 102--102
+[]|\T1/phv/m/n/7 B| 
+ []
+
+
+Overfull \hbox (3.65399pt too wide) in paragraph at lines 102--103
+[]|\T1/phv/m/n/7 C| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 A| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 B| 
+ []
+
+
+Overfull \hbox (3.65399pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 C| 
+ []
+
+
+Overfull \hbox (3.65399pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 D| 
+ []
+
+
+Overfull \hbox (3.26897pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 E| 
+ []
+
+
+Overfull \hbox (2.87701pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 F| 
+ []
+
+
+Overfull \hbox (4.04594pt too wide) in paragraph at lines 103--103
+[]|\T1/phv/m/n/7 G| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +1| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +1| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--104
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (7.27988pt too wide) in paragraph at lines 104--105
+[]|\T1/phv/m/n/7 +2| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 1| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 2| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 3| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 4| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 5| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 6| 
+ []
+
+
+Overfull \hbox (2.49197pt too wide) in paragraph at lines 105--105
+[]|\T1/phv/m/n/7 7| 
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 141.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 141.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 141.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 141.
+[100]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 167.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 167.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 167.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 167.
+ [101]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 187.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 187.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 187.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 187.
+ [102]
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 212.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 212.
+ [103
+
+]
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 219.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 219.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 240.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 240.
+.................................................
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 271.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 271.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 271.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 271.
+ [104
+
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 296.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 296.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 296.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 296.
+ [105]
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 301.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 301.
+.................................................
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 305.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 305.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 305.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 305.
+ [106
+
+]
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 313.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 313.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 323.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 323.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \insertitem with sig. 'm' on line 338.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \measure with sig. 's o >{\SplitList {;}}m o' on line 338.
+.................................................
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 358.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 358.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 358.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 358.
+ [107
+
+])
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 91.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 91.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 91.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 91.
+ [108
+
+] (./theory/akkoorden.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 1.
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 92.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 92.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language append on input line 92.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language append on input line 92.
+[109
 
 ] (./theory/ritmes.tex
 Package babel Info: Redefining dutch shorthand "|
@@ -4155,17 +4352,16 @@ Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 1.
 )
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 85.
+(babel)             in language append on input line 93.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 85.
+(babel)             in language append on input line 93.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 85.
+(babel)             in language append on input line 93.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 85.
- [97
+(babel)             in language append on input line 93.
+ [110
 
-]
-(./theory/spaanse_uitspraak.tex
+] (./theory/spaanse_uitspraak.tex
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining dutch shorthand "~
@@ -4177,14 +4373,14 @@ Underfull \hbox (badness 10000) in alignment at lines 38--38
 
 )
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 94.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 94.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 94.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 86.
- [98
+(babel)             in language append on input line 94.
+ [111
 
 ] (./theory/portugese_uitspraak.tex
 Package babel Info: Redefining dutch shorthand "|
@@ -4193,14 +4389,14 @@ Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 1.
 )
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 87.
- [99
+(babel)             in language append on input line 95.
+ [112
 
 ] (./theory/motivation.tex
 Package babel Info: Redefining dutch shorthand "|
@@ -4208,61 +4404,62 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language append on input line 1.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 16.
+(babel)             in language append on input line 18.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 16.
+(babel)             in language append on input line 18.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 16.
+(babel)             in language append on input line 18.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 16.
+(babel)             in language append on input line 18.
 
-[100
+[113
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 90.
+(babel)             in language append on input line 98.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 90.
+(babel)             in language append on input line 98.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language append on input line 90.
+(babel)             in language append on input line 98.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language append on input line 90.
- [101]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+(babel)             in language append on input line 98.
+ [114]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (./Tunabundel.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `Tunabundel.out' has not changed.
-(rerunfilecheck)             Checksum: 609B011D586C13E900E8D6B77BD7E880;8045.
+(rerunfilecheck)             Checksum: 9B40F3966F318FDF4AD0A6FC9BF098ED;8043.
  ) 
 Here is how much of TeX's memory you used:
- 19520 strings out of 493054
- 311477 string characters out of 6140586
- 411972 words of memory out of 5000000
- 22463 multiletter control sequences out of 15000+600000
- 55127 words of font info for 61 fonts, out of 8000000 for 9000
+ 19789 strings out of 493054
+ 314818 string characters out of 6140586
+ 420917 words of memory out of 5000000
+ 22722 multiletter control sequences out of 15000+600000
+ 58017 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,45p,10406b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,18n,45p,10406b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-bi0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi0700.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfti0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb>
-</usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/h
-elvetic/uhvro8a.pfb>
-Output written on Tunabundel.pdf (101 pages, 1052708 bytes).
+/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi0500.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfbi0700.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1
+/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8
+a.pfb>
+Output written on Tunabundel.pdf (114 pages, 1082219 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 700 compressed objects within 7 object streams
- 169 named destinations out of 1000 (max. 500000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 737 compressed objects within 8 object streams
+ 174 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
