@@ -1,6 +1,7 @@
 \documentclass[10pt,a4paper,twoside]{article}
 
-\usepackage[notranslation]{tunaChords}
+\usepackage{tunaChords}
+\usepackage{framed}
 
 \AtBeginDocument{
   \addtocontents{toc}{\small}
@@ -20,8 +21,9 @@
 
 
 \input{title}
-\cleardoublepage
-\renewcommand\contentsname{List of awesomeness.}
+\input{regels}
+\clearpage
+\renewcommand\contentsname{Lijst met liedjes.}
 \tableofcontents
 %\addtocontents{toc}{~\hfill\textbf{Page}\par}
 \vfill
@@ -31,23 +33,23 @@ Bundel is samengesteld door Michael en Youri.
 \raggedright
 \input{songs/adelita}\clearpage
 \input{songs/no_me_caso}\clearpage
-\input{songs/aguas}\clearpage % Intro en details, op een pagina laten passen.
-\input{songs/alma_corazon_y_vida}\clearpage
+\input{songs/aguas}\notition{8}\clearpage % Intro en details, op een pagina laten passen.
+\input{songs/alma_corazon_y_vida}\notition{8}\clearpage
 \input{songs/alma_llanera}\clearpage% moet instrumetale uitleg nog worden gedaan
-\input{songs/amor_de_mis_amores}\clearpage
-\input{songs/aqui_esta}\clearpage
-\input{songs/aurora}\clearpage 
+\input{songs/amor_de_mis_amores}\notition{8}\clearpage
+\input{songs/aqui_esta}\notition{8}\clearpage
+\input{songs/aurora}\notition{8}\clearpage 
 \input{songs/la_banda}\clearpage
 \input{songs/besame}\clearpage
-\input{songs/bikina}\clearpage
-\input{songs/calatayud}\clearpage
-\input{songs/calles_sin_rumbo}\clearpage
-\input{songs/cantar_de_emigracao}\clearpage
-\input{songs/cielito}\clearpage
-\input{songs/cintas_de_mi_capa}\clearpage
-\input{songs/clavelitos}\clearpage
-\input{songs/despierta}\clearpage
-\input{songs/don_quijote}\clearpage
+\input{songs/bikina}\notition{8}\clearpage
+\input{songs/calatayud}\notition{8}\clearpage
+\input{songs/calles_sin_rumbo}\notition{8}\clearpage
+\input{songs/cantar_de_emigracao}\notition{8}\clearpage
+\input{songs/cielito}\notition{8}\clearpage
+\input{songs/cintas_de_mi_capa}\notition{8}\clearpage
+\input{songs/clavelitos}\notition{8}\clearpage
+\input{songs/despierta}\notition{8}\clearpage
+\input{songs/don_quijote}\notition{8}\clearpage
 \input{songs/e-10}\clearpage
 \input{songs/elsa}\clearpage
 \input{songs/estrellita}\clearpage
@@ -78,7 +80,11 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/venezuela}\clearpage % een pagina krijgen
 
 \appendix
+\input{theory/theory}\clearpage
+\input{theory/akkoorden}\clearpage
+\input{theory/ritmes}\clearpage
 \input{theory/spaanse_uitspraak}\clearpage
+\input{theory/portugese_uitspraak}\clearpage
 \input{theory/motivation}
 
 \end{document}

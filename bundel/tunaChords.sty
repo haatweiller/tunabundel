@@ -2,7 +2,7 @@
 %% This file tunaChords.sty 
 %% is writen by Michael Heidweiller for
 %% The tuna bundle
-%% date of last modification 19-04-2015
+%% date of last modification 24-04-2015
 %%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -17,7 +17,7 @@
 \RequirePackage{tocloft}
 \RequirePackage{color}
 \RequirePackage[usenames,dvipsnames]{xcolor}
-\RequirePackage[spanish]{babel}
+\RequirePackage[dutch]{babel}
 \RequirePackage{units}
 \RequirePackage{marginnote}
 \RequirePackage{changepage}
@@ -89,6 +89,7 @@
 \setcounter{songs}{1}
 \newcounter{measures}
 \newcounter{measurerows}
+\newcounter{forloopI}
 
 %% lenghts
 %pagestyle
@@ -122,14 +123,45 @@
 \newcommand*{\stripunit}[1]{\strip@pt#1}
 \makeatother
 
+% forloop code from [2006/09/18 v3.0 For Loops for LaTeX]
+\newcommand{\forloop}[5][1]%
+{%
+\setcounter{#2}{#3}%
+\ifthenelse{#4}%
+	{%
+	#5%
+	\addtocounter{#2}{#1}%
+	\forloop[#1]{#2}{\value{#2}}{#4}{#5}%
+	}%
+	{%
+	}%
+}%
+\newcommand{\forLoop}[5][1]
+{%
+\setcounter{#4}{#2}%
+\ifthenelse{ \value{#4}<#3 }%
+	{%
+	#5%
+	\addtocounter{#4}{#1}%
+	\forLoop[#1]{\value{#4}}{#3}{#4}{#5}%
+	}%
+	{%
+	\ifthenelse{\value{#4}=#3}%
+		{%
+		#5%
+		}%
+		{}%
+	}%
+}
+
 % song header added to TOC and with number
 \DeclareDocumentEnvironment{song}{s O{default} m} {%	
 	% rhythm command
-	\DeclareDocumentCommand\rhythmandkey{O{\nicefrac{2}{4}} m m} {%
+	\DeclareDocumentCommand\rhythmandkey{s O{\nicefrac{2}{4}} m m} {%
 		\rmfamily
-		\vspace{-12pt}\hspace{\vnoffset}%
+		\IfBooleanF{##1}{\vspace{-12pt}}\hspace{\vnoffset}%
 		\scriptsize%
-		(\emph{\textbf{##1} ##2} in ##3)\par%
+		(\emph{\textbf{##2} ##3} in ##4)\par%
 		\normalsize\normalfont%
 	}
 
@@ -159,7 +191,7 @@
 
 	%code that song environment adds, commands need before this
 	\phantomsection
-	\IfBooleanTF{#1}{}{
+	\IfBooleanF{#1}{
 		\addcontentsline{toc}{section}{\if@nocolor
 			\arabic{songs}. #3
 		\else
@@ -216,13 +248,22 @@
 % translation environment
 \ifshowtranslation
   \DeclareDocumentEnvironment{translation}{s}{%
-  	{\vspace{12pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{Vertaling:}}\vspace{-24pt}}
+  	{\vspace{12pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{Vertaling:}}\vspace{-20pt}}
   	\list{}{\addtolength{\leftmargin}{\vindent}}%
 		\item[]%
-  	}{\endlist\IfBooleanTF{#1}{\cleardoublepage}{\clearpage}}
+  	}{\endlist%
+		%\IfBooleanTF{#1}{\cleardoublepage}{\clearpage}
+	}
 \else
   \excludecomment{translation}
 \fi
+
+% notitieblock command
+\DeclareDocumentCommand{\notition}{m}{%
+	\begin{tabular}[!h]{p{0.9\textwidth}}
+	\forLoop{1}{#1}{forloopI}{\hfill\\\hline}
+	\end{tabular}
+}
 
 % lijn bij header
 \renewcommand{\headrulewidth}{1.8pt}
@@ -268,7 +309,7 @@
 \renewcommand*\sfdefault{phv}
 
 % hyperref settings
-\hypersetup{bookmarks=true, unicode=true, pdftoolbar=false, pdfmenubar=true, pdffitwindow=true, pdfstartview={FitH}, pdfsubject={Muziekbundel van TCL}, pdfcreator={Tuna Ciudad de Luze}, pdfproducer={TunaTunes}, pdfnewwindow=true, colorlinks=true, linkcolor=red, citecolor=green, filecolor=magenta, urlcolor=cyan}
+\hypersetup{bookmarks=true, unicode=true, pdftoolbar=false, pdfmenubar=true, pdffitwindow=true, pdfstartview={FitH}, pdfsubject={Muziekbundel van TCL}, pdfcreator={Tuna Ciudad de Luze}, pdfproducer={TunaTunes}, pdfnewwindow=true, colorlinks=true, linkcolor=black, citecolor=green, filecolor=magenta, urlcolor=cyan}
 
 % setting amount of table of content columns
 \renewcommand*{\multicolumntoc}{2}
