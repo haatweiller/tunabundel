@@ -83,6 +83,7 @@
 \newcounter{songs}
 \setcounter{songs}{1}
 \newcounter{measures}
+\newcounter{measurerows}
 
 %% lenghts
 
@@ -124,43 +125,24 @@
 		\vspace{-12pt}\hspace{\vnoffset}%
 		\scriptsize%
 		(\emph{\textbf{##1} ##2} in ##3)\par%
-		\normalsize\normalfont}
+		\normalsize\normalfont%
+	}
 
 	\DeclareDocumentCommand\chord{s m}{%
 		\IfBooleanTF{##1}{\footnotesize\textbf{##2}\normalsize}{%
 			\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##2}\\			\mbox{}\end{tabular}}\normalsize}%
-		}
+	}
+
+	\DeclareDocumentCommand\repetition{m}{%
+		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{0pt}}\\
+	}
 	
 	%verse command
 	\DeclareDocumentEnvironment{verse}{m}{%
 		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{-20pt}}
 		\list{}{\addtolength{\leftmargin}{\vindent}}%
 			\item[]%
-	}{\endlist}
-	%instrumental command	
-	\DeclareDocumentEnvironment{instrumental}{m}{%
-		\FPeval\witdhdim{\stripunit\instrumentalwidth / 8}%
-		\setcounter{measures}{0}
-		\hspace{\vnoffset}\textbf{##1}\\
-		\begin{tabular}[!htbp]{| p{\witdhdim pt} | *{7}{p{\witdhdim pt} |}}%
-	}{\end{tabular}}
-	
-	\DeclareDocumentCommand{\measure}{s o >{\SplitList{;}}m o}{%
-		\IfNoValueF{##2}{\hspace{-4pt}\textbf{##2}}
-		\ProcessList{##3}{ \insertitem }%
-		\IfNoValueF{##4}{\textbf{##4}}
-		\stepcounter{measures}%
-		\IfBooleanTF{##1}{
-				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
-				\setcounter{measures}{0}%
-		}{
-			\ifnumequal{\themeasures}{8}{%
-				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
-				\setcounter{measures}{0}%
-			}{&}%
-		}
-	}%
-	\DeclareDocumentCommand\insertitem{m}{\footnotesize\textbf{##1}\normalsize\hfill}%
+	}{\endlist\vspace{-18pt}}
 
 	\phantomsection
 	\IfBooleanTF{#1}{}{
@@ -179,7 +161,41 @@
 	\fi
 	\end{center}
 	
-}{\IfBooleanTF{#1}{}{\stepcounter{songs}}\clearpage}
+}{\IfBooleanTF{#1}{}{\stepcounter{songs}}}
+
+%instrumental environment	
+\DeclareDocumentEnvironment{instrumental}{m O{8}}{%
+	\FPeval\witdhdim{\stripunit\instrumentalwidth / #2}%
+	\setcounter{measures}{0}
+	\setcounter{measurerows}{0}
+
+	% process measure inputs	
+	\DeclareDocumentCommand\insertitem{m}{\footnotesize\textbf{##1}\normalsize\hfill}%
+
+	% measure command	
+	\DeclareDocumentCommand{\measure}{s o >{\SplitList{;}}m o}{%
+		\IfNoValueF{##2}{\hspace{-4pt}\textbf{##2}}
+		\ifnumequal{\themeasures}{0}{%
+			\ifnumequal{\themeasurerows}{0}{}{%
+				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
+			}%
+			\stepcounter{measurerows}
+		}{}
+		\ProcessList{##3}{ \insertitem }%
+		\IfNoValueF{##4}{\textbf{##4}}
+		\stepcounter{measures}%
+		\IfBooleanTF{##1}{
+				\setcounter{measures}{0}%
+		}{
+			\ifnumequal{\themeasures}{#2}{%
+				\setcounter{measures}{0}%
+			}{&}%
+		}
+	}%
+	
+	\hspace{\vnoffset}\textbf{#1}\\
+	\begin{tabular}[!htbp]{| *{#2}{p{\witdhdim pt} |}}%
+}{\end{tabular}}
 
 \ifshowtranslation
   \DeclareDocumentEnvironment{translation}{s}{%
@@ -241,5 +257,6 @@
 
 % setting amount of table of content columns
 \renewcommand*{\multicolumntoc}{2}
+\tocloftpagestyle{fancyplain}
 
 \endinput
