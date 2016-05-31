@@ -28,8 +28,13 @@
 \RequirePackage[nomessages]{fp}
 \RequirePackage{float}
 \RequirePackage{colortbl}
+\RequirePackage{comment}
 
 %%%% Options
+\newif\ifshowtranslation\showtranslationfalse
+\DeclareOption{notranslation}{\showtranslationfalse}
+\DeclareOption{translation}{\showtranslationtrue}
+
 \newif\if@nocolor\@nocolorfalse
 \DeclareOption{color}{
 	\definecolor{default}{rgb}{1.0,0,0}
@@ -41,7 +46,7 @@
 	\@nocolortrue
 }
 
-\ExecuteOptions{color}
+\ExecuteOptions{color,translation}
 \ProcessOptions\relax
 
 %% counters
@@ -55,7 +60,7 @@
 \newlength{\vindent}
 \setlength{\vindent}{-1.5em}
 \newlength{\instrumentalwidth}
-\setlength{\instrumentalwidth}{336pt}
+\setlength{\instrumentalwidth}{330pt}
 \setlength{\parskip}{3ex}
 \setlength{\parindent}{0pt}
 \setlength{\textheight}{674pt}
@@ -96,8 +101,10 @@
 		(\emph{\textbf{##1} ##2} in ##3)\par%
 		\normalsize\normalfont}
 
-	\DeclareDocumentCommand\chord{m}{\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##1}\\
-	\mbox{}\end{tabular}}\normalsize}
+	\DeclareDocumentCommand\chord{s m}{%
+		\IfBooleanTF{##1}{\footnotesize\textbf{##2}\normalsize}{%
+			\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##2}\\			\mbox{}\end{tabular}}\normalsize}%
+		}
 	
 	%verse command
 	\DeclareDocumentEnvironment{verse}{m}{%
@@ -113,18 +120,20 @@
 		\begin{tabular}[!htbp]{| p{\witdhdim pt} | *{7}{p{\witdhdim pt} |}}%
 	}{\end{tabular}}
 	
-	\DeclareDocumentCommand{\measure}{s >{\SplitList{;}}m}{%
-		\ProcessList{##2}{ \insertitem }%
+	\DeclareDocumentCommand{\measure}{s o >{\SplitList{;}}m o}{%
+		\IfNoValueF{##2}{\hspace{-4pt}\textbf{##2}}
+		\ProcessList{##3}{ \insertitem }%
+		\IfNoValueF{##4}{\textbf{##4}}
 		\stepcounter{measures}%
-		\ifnumequal{\themeasures}{8}{%
-			\IfBooleanTF{##1}{}{\\\arrayrulecolor{white}\hline\arrayrulecolor{black}}%
-			\setcounter{measures}{0}%
-		}{&}%
+		\IfBooleanF{##1}{
+			\ifnumequal{\themeasures}{8}{%
+				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
+				\setcounter{measures}{0}%
+			}{&}%
+		}
 	}%
-	\DeclareDocumentCommand\insertitem{m}{\textbf{##1}\hfil}%
+	\DeclareDocumentCommand\insertitem{m}{\footnotesize\textbf{##1}\normalsize\hfill}%
 	
-
-
 	\begin{center}%
 	\LARGE %
 	\if@nocolor
@@ -135,6 +144,12 @@
 	\end{center}
 	
 }{\IfBooleanTF{#1}{}{\stepcounter{songs}}\clearpage}
+
+\ifshowtranslation
+  \DeclareDocumentEnvironment{translation}{s}{\textbf{Vertaling:}\\}{\IfBooleanTF{#1}{\cleardoublepage}{\clearpage}}
+\else
+  \excludecomment{translation}
+\fi
 
 % lijn bij header
 \renewcommand{\headrulewidth}{1.8pt}
