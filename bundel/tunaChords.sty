@@ -93,28 +93,31 @@
 
 %% lenghts
 %pagestyle
+\setlength{\hoffset}{-10pt}
 \newlength{\vindent}
 \setlength{\vindent}{-1.5em}
 \newlength{\instrumentalwidth}
-\setlength{\instrumentalwidth}{330pt}
+\setlength{\instrumentalwidth}{300pt}
 \setlength{\parskip}{3ex}
 \setlength{\parindent}{0pt}
-\setlength{\textheight}{674pt}
-\setlength{\textwidth}{426pt}
+\setlength{\textheight}{700pt}
+\setlength{\textwidth}{420pt}
 \setlength{\headheight}{30.2pt}
 \setlength{\headsep}{2ex}
 \setlength{\voffset}{0pt}
 \setlength{\topmargin}{-25pt}
-\setlength{\marginparwidth}{5em}
+\setlength{\marginparwidth}{1em}
 %\setlength{\headwidth}{0.75\paperwidth}
 \setlength{\hoffset}{0pt}
-\setlength{\marginparsep}{1em}
+\setlength{\marginparsep}{5em}
+\setlength{\oddsidemargin}{15pt}
+\setlength{\evensidemargin}{10pt}
 
 \newlength{\myoddoffset}
 \setlength{\myoddoffset}{\marginparwidth plus \marginparsep}
 
 \newlength{\vnoffset}
-\setlength{\vnoffset}{-12pt}
+\setlength{\vnoffset}{-8pt}
 
 \setlength{\arrayrulewidth}{1pt}
 
@@ -154,6 +157,21 @@
 	}%
 }
 
+% by martin scharrer @ http://tex.stackexchange.com/questions/11707/how-to-force-output-to-a-left-or-right-page
+\makeatletter
+\newcommand*{\cleartoleftpage}{%
+  \clearpage
+    \if@twoside
+    \ifodd\c@page
+      \hbox{}\newpage
+      \if@twocolumn
+        \hbox{}\newpage
+      \fi
+    \fi
+  \fi
+}
+\makeatother
+
 % song header added to TOC and with number
 \DeclareDocumentEnvironment{song}{s O{default} m} {%	
 	% rhythm command
@@ -190,24 +208,24 @@
 
 
 	%code that song environment adds, commands need before this
+	\IfBooleanF{#1}{\cleartoleftpage}
 	\phantomsection
-	\IfBooleanF{#1}{
-		\addcontentsline{toc}{section}{\if@nocolor
-			\arabic{songs}. #3
-		\else
-			\textcolor{\iffancytoc #2\else default\fi}{\arabic{songs}. #3}
-		\fi}}
+	\addcontentsline{toc}{section}{\if@nocolor
+		\arabic{songs}. #3
+	\else
+		\textcolor{\iffancytoc #2\else default\fi}{\arabic{songs}. #3}
+	\fi}
 	\vspace{-12pt}	
 	\begin{center}%
 	\LARGE %
 	\if@nocolor
-		\IfBooleanTF{#1}{}{\arabic{songs}. }\textbf{#3}
+		\arabic{songs}. \textbf{#3}
 	\else
-		\textcolor{#2}{\IfBooleanTF{#1}{}{\arabic{songs}. } \textbf{#3}}
+		\textcolor{#2}{\arabic{songs}. \textbf{#3}}
 	\fi
 	\end{center}
 	
-}{\IfBooleanTF{#1}{}{\stepcounter{songs}}}
+}{\stepcounter{songs}}
 
 %instrumental environment	
 \DeclareDocumentEnvironment{instrumental}{m O{8}}{%
@@ -261,7 +279,7 @@
 % notitieblock command
 \DeclareDocumentCommand{\notition}{m}{%
 	\begin{tabular}[!h]{p{0.9\textwidth}}
-	\forLoop{1}{#1}{forloopI}{\hfill\\\hline}
+	\forLoop{1}{#1}{forloopI}{\vspace{1.1ex}\hfill\\\hline}
 	\end{tabular}
 }
 
