@@ -1,25 +1,50 @@
 \documentclass{article}
-\usepackage[a6paper,landscape,centering]{geometry}
+\usepackage[a4paper,landscape,centering]{geometry}
 \usepackage{multicol}
 \usepackage{enumitem}
 %\usepackage{showframe}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[cm]{fullpage}
+\usepackage{ifthen}
 
 \setlength{\columnsep}{18pt}
 \setlength{\columnseprule}{.4pt}
 
+\newcounter{forloopI}
+
+\newcommand{\forLoop}[5][1]
+{%
+\setcounter{#4}{#2}%
+\ifthenelse{ \value{#4}<#3 }%
+	{%
+	#5%
+	\addtocounter{#4}{#1}%
+	\forLoop[#1]{\value{#4}}{#3}{#4}{#5}%
+	}%
+	{%
+	\ifthenelse{\value{#4}=#3}%
+		{%
+		#5%
+		}%
+		{}%
+	}%
+}
 
 \begin{document}
-\thispagestyle{empty}
 \vspace*{\fill}
-
+\noindent
+\thispagestyle{empty}
+\forLoop{1}{4}{forloopI}{%
+\begin{minipage}[b][65mm]{124mm} %105
+\vspace*{\fill}
 \begin{multicols}{3}
 \section*{Set 1}
 \begin{enumerate}[leftmargin=*]
 \item Adelita
 \item Hoy Estoy Aqui
 \item Clavelitos
-\item Rondalla
+\item Calatayud / cielito lindo  
 \item Guantanamera
 \item San Cayetano
 \end{enumerate}
@@ -28,23 +53,27 @@
 \section*{Set 2}
 \begin{enumerate}[leftmargin=*]
 \item Aqui Esta la Tuna
-\item 
-\item 
-\item 
-\item 
-\item 
+\item Alma llanera 
+\item Rondalla / Aurora 
+\item e 10/paloma
+\item cielito lindo
+\item San Cayetano / párate 
 \end{enumerate}
 
 \columnbreak
 \section*{Set 3}
 \begin{enumerate}[leftmargin=*]
-\item Adelita
-\item 
-\item 
-\item 
-\item 
-\item 
+\item Parrandero 
+\item Venezuela 
+\item despierta / elsa
+\item aguas do dao
+\item julio 
+\item San Cayetano / Tuna de ingenieros 
 \end{enumerate}
 \end{multicols}
+%\vspace*{\fill}
+\end{minipage}%%
+\ifthenelse{\value{forloopI}=2}{\\\vspace*{\fill}}{\hspace{15mm}}%
+}
 \vspace*{\fill}
 \end{document}

@@ -2,6 +2,7 @@
 
 \usepackage{tunaChords}
 \usepackage{framed}
+\usepackage{longtable}
 
 \AtBeginDocument{
   \addtocontents{toc}{\small}
@@ -31,16 +32,15 @@ Bundel is samengesteld door Michael en Youri.
 \clearpage
 
 \raggedright
-\input{songs/adelita}
-\input{songs/no_me_caso}
+\input{songs/adelita}\notition{6}
 \input{songs/aguas}\notition{8}
 \input{songs/alma_corazon_y_vida}\notition{8}
-\input{songs/alma_llanera}% moet instrumetale uitleg nog worden gedaan
+\input{songs/alma_llanera}\notition{8}% moet instrumetale uitleg nog worden gedaan
 \input{songs/amor_de_mis_amores}\notition{8}
 \input{songs/aqui_esta}\notition{8}
 \input{songs/aurora}\notition{8} 
-\input{songs/la_banda}
-\input{songs/besame}
+\input{songs/la_banda}\notition{8}
+\input{songs/besame}\notition{8}
 \input{songs/bikina}\notition{8}
 \input{songs/calatayud}\notition{8}
 \input{songs/calles_sin_rumbo}\notition{8}
@@ -50,34 +50,37 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/clavelitos}\notition{8}
 \input{songs/despierta}\notition{8}
 \input{songs/don_quijote}\notition{8}
-\input{songs/e-10}
+\input{songs/e-10}\notition{8}
 \input{songs/elsa}\notition{8}
 \input{songs/estrellita}\notition{8}
-\input{songs/estudantiana_madrilena}
+\input{songs/estudantiana_madrilena}\notition{8}
 \input{songs/adios}
 \input{songs/fonseca}
 \input{songs/guantanamera}\notition{8}
 \input{songs/hoy_estoy_aqui}\notition{8}
 \input{songs/manolo}\notition{8}
 \input{songs/moliendo_cafe}\notition{8}
-\input{songs/julio}% moet nog worden gedaan
-\input{songs/naranjitay} %kleine details
-\input{songs/nostalgias}
-\input{songs/paloma}
-\input{songs/parate}
-\input{songs/parrandero}
-\input{songs/perfidia}
-\input{songs/piel_canela}
-\input{songs/poco_a_poco}
-\input{songs/quiero_ser_como_tu}
-\input{songs/recuerdos}
-\input{songs/rondalla}
-\input{songs/san_cayetano} 
-\input{songs/siete_amores}
-\input{songs/sirena}
-\input{songs/torero}
-\input{songs/tuna_de_ingenieros} % Intro
-\input{songs/venezuela}
+\input{songs/julio}\notition{6}
+\input{songs/naranjitay}\notition{8}
+\input{songs/nostalgias}\notition{8}
+\input{songs/paloma}\notition{8}
+\input{songs/parate}\notition{8}
+\input{songs/parrandero}\notition{8}
+\input{songs/perfidia}\notition{8}
+\input{songs/piel_canela}\notition{8}
+\input{songs/poco_a_poco}\notition{8}
+\input{songs/porompompero}\notition{8}
+\input{songs/quiero_ser_como_tu}\notition{8}
+\input{songs/recuerdos}\notition{8}
+\input{songs/rondalla}\notition{8}
+\input{songs/san_cayetano} \notition{8}
+\input{songs/siete_amores}\notition{8}
+\input{songs/sirena}\notition{8}
+\input{songs/torero}\notition{8}
+\input{songs/tuna_compostelana}\notition{8}
+\input{songs/tuna_de_ingenieros}\notition{8}
+\input{songs/venezuela}\notition{8}
+\input{songs/y_viva_espana}\notition{8}
 
 \appendix
 \cleardoublepage
@@ -89,7 +92,10 @@ Bundel is samengesteld door Michael en Youri.
 \end{center}
 \clearpage
 \input{theory/theorie}\clearpage
-\input{theory/akkoorden}\clearpage
+\stepcounter{section}\phantomsection\addcontentsline{toc}{section}{\Alph{section}\hspace{1em}Akkoorden}
+\lilypondfile[noindent]{theory/chords.ly}
+\input{theory/akkoorden}
+\clearpage
 \input{theory/ritmes}\clearpage
 \input{theory/spaanse_uitspraak}\clearpage
 \input{theory/portugese_uitspraak}\clearpage

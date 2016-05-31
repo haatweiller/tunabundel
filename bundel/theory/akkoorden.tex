@@ -1,1 +1,199 @@
-\section{Akkoorden}
+\begin{longtable}{b{0.25\textwidth} m{0.75\textwidth}}
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1
+	}
+}
+\new Staff {
+	\chordmode {
+		c1
+	}
+}
+>>
+\end{lilypond}
+& C\chord{C} majeur\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:m
+	}
+}
+\new FretBoards {
+	\chordmode {
+	  	c1:m
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:m
+	}
+}
+>>
+\end{lilypond}
+& C\chord{Cm} minuer\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:dim
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1:dim
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:dim
+	}
+}
+>>
+\end{lilypond}
+& \begin{tabular}{@{}l@{}}
+C\chord{Cdim} diminished\\
+C minuer met een verminderde kwint(5)
+\end{tabular}\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:7
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1:7
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:7
+	}
+}
+>>
+\end{lilypond}
+& \begin{tabular}{@{}l@{}}
+C\chord{C7} dominant septiem\\
+C majeur met een mineur septiem(7)
+\end{tabular}\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:maj7
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1:maj7
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:maj7
+	}
+}
+>>
+\end{lilypond}
+& \begin{tabular}{@{}l@{}}
+C\chord{Cmaj7} majeur septiem\\
+C dominant septiem met een majeur septiem (7)\end{tabular}\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:m7
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1:m7
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:m7
+	}
+}
+>>
+\end{lilypond}
+& C\chord{Cm7} mineur septiem\\
+\begin{lilypond}
+<<
+\new ChordNames {
+	\chordmode {
+	  	c1:m6
+	}
+}
+\new FretBoards {
+	\chordmode {
+		c1:m6
+	}
+}
+\new Staff {
+	\chordmode {
+		c1:m6
+	}
+}
+>>
+\end{lilypond}
+& C\chord{Cm6} mineur met toegevoegde sext\\
+\multicolumn{2}{l}{\textbf{Extra akkoorden}}\\
+\begin{lilypond}
+<<
+\new Staff {
+	<dis g b g'>1
+}
+\new TabStaff{
+	<dis g b g'>1
+}
+>>
+\end{lilypond}
+& G5+ voor Granada\\
+\begin{lilypond}
+<<
+\new Staff {
+	<g d a c g>1
+}
+\new TabStaff{
+	<g, d a c' g'>1
+}
+>>
+\end{lilypond}
+& G4-9 voor Granada\\
+\end{longtable}
+
+\rotatebox{90}{%
+\begin{tabular}{|p{3.5em}|p{5em}*{8}{| l }|p{6.7em}|}
+\hline
+\multicolumn{2}{|c|}{Chord Symbol}	& \multicolumn{4}{c|}{Analysis of symbol parts} & \multicolumn{3}{c|}{Component intervals} & Notes & Chord name\\\hline
+Short	& Long	& Root	& Third	& Fifth	& Added	& Third	& Fifth	& Added &  & \\\hline
+C	&	& C	& 	& 	& 	& maj3	& perf5	& 	& C-E-G	& Major triad\\\hline
+CM 	& Cmaj 	& C	& maj	& 	& 	& maj3	& perf5	& 	& C-E-G & \\\hline
+Cm	& Cmin	& C	& min	& 	& 	& min3	& perf5	& 	& C-E$\flat$-G	& Minor triad\\\hline
+C+	& Caug	& C	& 	& aug	& 	& maj3	& aug5	& 	& C-E-G$\sharp$	& Augmented triad\\\hline
+Co	& Cdim	& C	& 	& dim	& 	& min3	& dim5	& 	& C-E$\flat$-G$\flat$	& Diminished triad\\\hline
+C6	&	& C	& 	& 	& 6	& maj3	& perf5	& maj6	& C-E-G-A	& Major sixth chord\\\hline
+CM6	& Cmaj6 & C	& maj	& 	& 6	& maj3	& perf5	& maj6  &  & \\\hline
+Cm6	& Cmin6	& C	& min	& 	& 6	& min3	& perf5	& maj6	& C-E$\flat$-G-A	& Minor sixth chord\\\hline
+C7	& Cdom7	& C	& 	& 	& 7	& maj3	& perf5	& min7	& C-E-G-B$\flat$	& Dominant seventh chord\\\hline
+CM7	& Cmaj7	& C	& maj	& 	& 7	& maj3	& perf5	& maj7	& C-E-G-B	& Major seventh chord\\\hline
+Cm7	& Cmin7	& C	& min	& 	& 7	& min3	& perf5	& min7	& C-E$\flat$-G-B$\flat$	& Minor seventh chord\\\hline
+C+7	& Caug7	& C	& 	& aug	& 7	& maj3	& aug5	& min7	& C-E-G$\sharp$-B$\flat$	& Augmented seventh chord\\\hline
+Co7	& Cdim7	& C	& 	& dim	& 7	& min3	& dim5	& dim7	& C-E$\flat$-G$\flat$-B$\flat\flat$	& Diminished seventh chord\\\hline
+Cø	&	& C	& 	& dim	& 	& min3	& dim5	& min7	& C-E$\flat$-G$\flat$-B$\flat$	& Half-diminished seventh chord\\\hline
+Cø7	&	& C	& 	& dim	& 7	& min3	& dim5	& min7  & & \\\hline
+CmM7 Cm/M7 Cm(M7) & 	Cminmaj7 Cmin/maj7 Cmin(maj7) &	C	& min	& & maj7	& min3	& perf5	& maj7	& C-E$\flat$-G-B & Minor-major seventh chord\\\hline
+\end{tabular}
+}
+
+From \href{https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)}{Wikipedia}
