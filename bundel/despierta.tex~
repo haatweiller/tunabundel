@@ -1,0 +1,68 @@
+\begin{song}{Despierta}
+\rhythmandkey[\nicefrac{4}{4}]{Tango}{D}
+
+\textbf{Slagje:}
+
+\begin{tabular}{llllllll}
+  \textbf{Tel} & \textbf{1} &  & \textbf{2} &  & \textbf{3} &  & \textbf{4} \\
+  \textbf{Plukken} &  &  &  & $\downarrow$ & $\downarrow$ &  &  \\
+  \textbf{Basnoot} & \textbf{x} &  &  &  &  &  & \textbf{x} \\
+\end{tabular}
+
+\textbf{Intro}\\
+Inval bandurria
+\begin{instrumental}{}
+\measure{\underline{40 42 44}} \measure{D7$\downarrow$} \measure{\underline{63} G$\downarrow\downarrow$ \underline{62}} \measure{\underline{60} Em$\downarrow\downarrow$ \underline{52}} \measure*{\underline{40} D$\downarrow\downarrow$ \underline{50}}
+\end{instrumental}
+
+\begin{instrumental}{}
+\measure{}\measure{\underline{42} A7$\downarrow\downarrow$ \underline{50}} \measure{\underline{42} A7$\downarrow\downarrow$ \underline{50}} \measure{\underline{40} D$\downarrow\downarrow$ \underline{50}} \measure*{\underline{40} D$\downarrow\downarrow$ \underline{50}}
+\end{instrumental}{}
+
+\begin{verse}{Couplet 1}
+  Des\chord{D}pierta, dulce amor de mi \chord{A7}vida.
+  \\
+  Despierta, si te encuentras dor\chord{D}mida.
+  \\
+  Escucha mi voz, \chord{} %leeg chord is toegevoegd, omdat het anders lelijk is
+  \\
+  vibrar la con tu ven\chord{A7}tana.
+  \\
+  Con esta canci\'{o}n \chord{} %idem
+  \\
+  te vengo a entregar el \chord{D}alma.
+\end{verse}
+
+\begin{verse}{Refrein}
+  Perdona, \chord{*\underline{40 42 44}}\hspace{4em} si inter\chord{D7$\downarrow$}rumpo tu \chord{G}sue\~{n}o, \chord{Em} \hspace{3em} (* zelfde als intro)
+  \\
+  pero \chord{D}no pude mas,
+  \\
+  y esta noche te \chord{A7}vine a decir ....
+  \\
+  Te \chord{D}quiero.
+\end{verse}
+
+\textbf{[ Couplet}
+(instrumentaal tot: Escucha mi voz...)
+\textbf{ ]}\\
+\textbf{[ Refrein ]}
+
+\begin{instrumental}{Einde}
+\measure{\underline{50 40}}\measure*{D$\downarrow$}
+\end{instrumental}
+
+\end{song}
+\begin{translation}
+Wordt wakker, zoete lief van mijn leven.\\
+Wordt wakker, als je nog ligt te slapen.\\
+Luister naar mijn stem,\\
+die vibreert in jouw venster.\\
+Want dit lied zorgt ervoor\\
+dat je de geest geeft.\\
+\vspace*{1\baselineskip}
+Vergeef me, als ik je gestoord heb in een droom,\\
+maar ik kon het niet meer inhouden,\\
+en daarom kom ik je vannacht zeggen....\\
+Ik hou van jouw.\\
+\end{translation}

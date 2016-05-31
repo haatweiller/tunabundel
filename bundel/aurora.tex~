@@ -1,0 +1,50 @@
+\begin{song}[vals]{La Aurora}
+\rhythmandkey[\nicefrac{3}{4}, \nicefrac{2}{4}]{Vals, Pase Doble}{D}
+Ritme = \nicefrac{3}{4}\\
+\begin{instrumental}{Intro}
+\measure{D} \measure{} \measure{D$\downarrow$} \measure{D} \measure*{}\\
+\measure{} \measure{} \measure*{} \measure{} \measure{A7} \measure*{\underline{60 50 64}}\\
+\measure{G} \measure{} \measure{} \measure{D} \measure*{}\\
+\measure{A7} \measure{}  \measure{} \measure{D} \measure*{\underline{50 52 54}}
+\end{instrumental}
+\begin{verse}{}
+\hspace{-2em}\textbf{Couplet 1 (2x)}\\
+\chord{D}Cuando la aurora tien\chord{D$\downarrow$, alleen 2e keer}de, su manto\\
+y el firmamento viste de a\chord{A7}zul\hspace{3em}
+\chord{\underline{60 50 64}}\\ \chord{G}hay un lucero que brille \chord{D}tanto\\
+\chord{A7}como esos ojos que tienes \chord{D}tú.\hspace{3em}\chord{\textbf{*\underline{50 52 54}}\hspace{3.5em}(*alleen 1e keer)}\\
+\end{verse}
+\begin{verse}{Couplet 2}
+\chord{D}Bella au\chord{A7}rora,\\
+si es que \chord{D}duermes\\
+en bra\chord{A7}zos de una illu\chord{D}sión.\hspace{1em}\chord{D7}\\
+Des\chord{G}pierta si estás dor\chord{D}mida, morena, si,\\
+\chord{A7}para escuchar mi can\chord{D}ción de a\chord{A7}mor.\\
+Des\chord{G}pierta si estás dor\chord{D}mida, morena, si,\\
+\chord{A7}para escuchar mi can\chord{D$\downarrow$}ción.\hspace{1em}\chord{A7$\downarrow$}\hspace{2em}\chord{D$\downarrow$}\\
+\end{verse}
+Ritme = \nicefrac{2}{4}\\
+\begin{verse}{Couplet 3 (2x)}
+Bella \chord{D}niña sal al balcón,\\
+que te estoy espe\chord{D7}rando a \chord{G}ti,\\
+para darte la sere\chord{D}nata,\\
+sólo, \chord{A7}sólo para \chord{D$\downarrow$}ti. \hspace{1em}\chord{A7$\downarrow$}\hspace{2em}\chord{D$\downarrow$}\\
+\end{verse}
+\begin{translation}
+Als de dageraad haar mantel uitspreidt\\
+en het firmament met blauw bedekt wordt\\
+bestaat er geen morgenster die zo schittert\\
+als die ogen van jou.\\\vspace{1em}
+Mooie dageraad,\\
+mocht je slapen\\
+in de armen der illusie,\\
+word dan wakker als je slaapt, donker meisje,\\
+om mijn liefdeslied aan te horen,\\
+word dan wakker als je slaapt, donker meisje,\\
+om mijn lied aan te horen.\\\vspace{1em}
+Mooi meisje kom op het balkon,\\
+want ik sta op je te wachten\\
+om je een serenade te geven,\\
+helemaal alleen voor jou.\\
+\end{translation}
+\end{song}

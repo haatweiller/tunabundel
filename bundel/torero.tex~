@@ -1,0 +1,79 @@
+\begin{song}{El Torero}
+\rhythmandkey{Paso doble}{Am/A}
+
+\begin{instrumental}{Intro}
+\measure{;;;;;;;;;;;;;;52;53} \measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\measure{60;;;;;52;53}\measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\\
+\measure{E$^{2}$} \measure{} \measure{} \measure*{}\\
+\measure{E$^{3}$} \measure{} \measure{F} \measure*{}\\
+\measure{E$^{3}$} \measure{} \measure{} \measure*{}\\
+\measure{E$^{3}$} \measure{} \measure{} \measure*{}\\
+\measure{} \measure{} \measure{F} \measure*{}\\
+\measure{E$^{3}$} \measure{} \measure{}
+\measure*{}\\
+\\
+\measure{60;;;;;52;53} \measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\measure{60;;;;;52;53}\measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\end{instrumental}
+
+\begin{verse}{Couplet 1}
+\chord{E$^3$} Un domingo en la tarde \chord{F} se tiró al \chord{E$^3$} ruedo,\\
+para calmar sus ansias \chord{F} de novi\chord{E$^3$}llero.
+\end{verse}
+
+\begin{instrumental}{Vervolg intro}
+\measure{60;;;;;52;53} \measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\measure{60;;;;;52;53}\measure{40;;;;;53;52}\measure{53;;;;;52;50}\measure*{63;61}\\
+\\
+\measure{E$^2$} \measure{} \measure{} \measure{slagje} E$\downarrow$\\
+\end{instrumental}
+
+\begin{verse}{Couplet 2}
+To\chord{A}rero, valiente,\\
+despliega el capote con arte sin miedo a la \chord{E}muerte.\\
+La \chord{Bm}Virgen, te cuida,\\
+y cubre tu manto que es \chord{E7}santo mantón de Ma\chord{A}nila. \chord{60\hspace{0.5em}62\hspace{0.5em}63\hspace{0.5em}64\hspace{0.5em}E slagje}
+\end{verse}
+
+\clearpage
+
+\begin{verse}{Refrein}
+Mu\chord{A}chacho, te arrimas\\
+lo mismo en el quite ga\chord{A7}llardo que en las bande\chord{D}rillas.\chord{D$\downarrow$}\\
+To\chord{D}rero, \chord{Dm} quien \chord{A}sabe \chord{60\hspace{0.5em}61\hspace{0.5em}F$\#$}\\
+si el \chord{Bm}precio del triunfo lo \chord{E7}paguen tu vida y tu \chord{A}sangre.
+\end{verse}
+
+\begin{instrumental}{Intermezzo}
+|\measure{:G*} \measure{F*} \measure{G*\hspace{2em}F$\downarrow$} \measure*{E* \hspace{2em}:}|\\
+\end{instrumental}
+
+\textbf{60 62 64}\\
+
+\textbf{Couplet 2 (instrumentaal)}\\
+
+\textbf{Refrein}\\
+
+\begin{instrumental}{Einde}
+\measure{F*} \measure{E$\downarrow$ \hspace{1em} A$\downarrow$}
+\end{instrumental}
+\end{song}
+
+\begin{translation}
+Een zondagavond\\
+gooide hij zich in de arena,\\
+om zijn angsten te overwinnen\\
+van een beginnend stierenvechter.\\
+
+Torero, moedige vent,\\
+ontplooi de cappa met kunst zonder vrees voor de dood.\\
+De Maagd verzorgt je\\
+en bedekt je met de mantel, welke je heilige omslagdoek is.\\
+
+Zelfs Muchacho werpt\\
+bij het moedige ontwijken van de stier een spies.\\
+Torero, wie weet\\
+of de prijs van de triomf van hen, die betalen met hun leven en hun
+bloed.
+\end{translation}

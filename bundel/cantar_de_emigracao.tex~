@@ -1,0 +1,36 @@
+\begin{song}{Cantar de Emigracão}
+	\rhythmandkey[\nicefrac{3}{4}]{Fado}{Dm/Am}
+	\textbf{intro gitaar}\\
+	\textbf{intro instrumentaal (zoals couplet 1, 2, en 3)}
+	
+\begin{verse}{couplet 1:}
+	Este \chord{Dm\tiny{\underline{40}}}parte, e aquele \chord{F\tiny{\underline{61}}}parte\\
+	E \chord{Bb\tiny{\underline{51}}}todos, \chord{Gm\tiny{\underline{63}}}todos se v\chord{C\tiny{\underline{53}}}ão,\\
+	Ga\chord{C7\tiny{\underline{53}}}liza \chord{A7\tiny{\underline{54}}}ficas sem \chord{Dm\tiny{\underline{40}}}homens,\\
+	Que \chord{Bb\tiny{\underline{51}}}possam \chord{Gm\tiny{\underline{63}}}cortar teu \chord{A7sus4\tiny{\underline{50}}}pão. \phantom{xxxx}\chord{A7$\downarrow$}
+\end{verse}
+\begin{verse}{couplet 2:}
+	Tens em \chord{Dm\tiny{\underline{40}}}troca, órfãos é  \chord{F\tiny{\underline{61}}}órfas,\\
+	Tens \chord{Bb\tiny{\underline{51}}}campos, \chord{Gm\tiny{\underline{63}}}de soli\chord{C\tiny{\underline{53}}}dão,\\
+	Tens \chord{C7\tiny{\underline{53}}}mães que \chord{A7\tiny{\underline{54}}}não têm \chord{Dm\tiny{\underline{40}}}filhos,\\
+	Fil\chord{Bb\tiny{\underline{51}}}hos que \chord{Gm\tiny{\underline{63}}}não têm \chord{A7sus4\tiny{\underline{50}}}mães. \phantom{xxxx}\chord{A7$\downarrow$}
+\end{verse}
+\begin{verse}{couplet 3:}
+	Cora\chord{Dm\tiny{\underline{40}}}çao, que tens e \chord{F\tiny{\underline{61}}}sofre,\\
+	Lon\chord{Bb\tiny{\underline{51}}}gas, au\chord{Gm\tiny{\underline{63}}}sências mort \chord{C\tiny{\underline{53}}}ais,\\
+	Vi\chord{C7\tiny{\underline{53}}}úvas \chord{A7\tiny{\underline{54}}}de vivos \chord{Dm\tiny{\underline{40}}}mortos,\\
+	Que \chord{Bb\tiny{\underline{51}}}ninguém \chord{Gm\tiny{\underline{63}}}consola\chord{A7sus4\tiny{\underline{50}}}rá. \phantom{xxxxxx}\chord{A7$\downarrow$}
+\end{verse}
+\begin{instrumental}{instrumentaal in Em}
+	\measure{Em\tiny{\underline{60}}}\measure{Em\tiny{\underline{60}}}\measure{G\tiny{\underline{63}}} \measure{G\tiny{\underline{63}}}\\
+	\measure{C\tiny{\underline{53}}}\measure{Am\tiny{\underline{50}}}\measure{D\tiny{\underline{40}}}\measure{D\tiny{\underline{40}}}
+	\measure{D7\tiny{\underline{40}}}\measure{B7\tiny{\underline{52}}}\measure{Em\tiny{\underline{60}}}\measure{Em\tiny{\underline{60}}}\\
+	\measure{C\tiny{\underline{53}}}\measure{Am\tiny{\underline{50}}}\measure{B7\tiny{\underline{52}}}\measure{B7}
+\end{instrumental}
+
+\textbf{versnelling trom, inval gitaren slagje Em}\\
+\textbf{instrumentaal in Em snel (zoals voorgaand):\\Em\phantom{xxx}G\phantom{xxx}C\phantom{xi}Am\phantom{xi}D\phantom{xxx}D7\phantom{xi}B7\phantom{xi}Em\phantom{xxx}C\phantom{xi}Am\phantom{xi}B7\phantom{xi}B7$\downarrow$}\\
+	couplet 1\\
+	einde:\\
+	Este parte, e aquele parte
+\end{song}

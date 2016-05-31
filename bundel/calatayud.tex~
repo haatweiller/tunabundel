@@ -1,0 +1,40 @@
+\begin{song}[pase_doble]{Calatayud}
+\rhythmandkey{Paso Doble}{A}
+\begin{instrumental}{Intro}
+\measure{}\measure{A}\measure{}\measure{}\measure{}\measure*{}\\
+\measure{E}\measure{}\measure{}\measure{}\measure{}\measure*{}\\
+\measure{A}\measure{}\measure{}\measure{}\measure{}\measure*{}\\
+\measure{E}\measure{}\measure{}\measure{}\measure{}\measure*{}\chord*{A$\downarrow$}\hspace{1.5em}\chord*{E$\downarrow$}\chord*{A$\downarrow$}\\
+\end{instrumental}
+
+\begin{verse}{Couplet 1}
+Por ser am\chord{A}iga de hacer fa\chord{E}vores.\\
+Por ser alegre su juven\chord{A$\downarrow$}tud.\hspace{0.5em}\chord{E$\downarrow$}\hspace{0.5em}\chord{A$\downarrow$}\\
+En \chord{Am}coplas se vió la Do\chord{E}lores,\\
+la flor de Calata\chord{Am (slagje)}yud.\\
+Una \chord{G}jotica recorrió Es\chord{C}paña,\\
+pregón de in\chord{F}famia de una mu\chord{E}jer.\\
+Y el buen nombre\hspace{0.5em}\chord{E$\downarrow\downarrow$}\hspace{0.5em} de aquella maña\chord{Am$\downarrow\downarrow$}\\
+\chord{*Dm}yo tengo \chord{F}que defen\chord{E}der.\hspace{3em}(* roffelen)\\
+\end{verse}
+
+\begin{verse}{Refrein}
+Si vas a Calata\chord{A}yud, si vas a Calata\chord{E}yud.\\
+Pregunta por la Do\chord{A}lores, una copla la ma\chord{E}tó,\\
+de ver\chord{D}güenza y sin sa\chord{A}bores.\\
+\chord{}Ves que te lo digo yo,\\
+el hijo de la Dol\chord{A}ores.\chord{} \hspace{1.5em}\chord{A$\downarrow$}\hspace{1.5em}\chord{E$\downarrow$}\hspace{1.5em}\chord{A$\downarrow$}\\
+\end{verse}
+
+\begin{verse}{Couplet 2}
+Dice la \chord{A}gente de mala \chord{E}lengua,\\
+que por tu calle me ve ron\chord{A$\downarrow$}dar.\chord{E$\downarrow$}\hspace{1.5em}\chord{A$\downarrow$}\\
+"¿ Tú \chord{Am}sabes su madre quien \chord{E}era ?\\
+Dolores la del can\chord{Am}tar ."\\
+Yo la que\chord{G}ría con amor \chord{C}bueno,\\
+más la ca\chord{F}lumnia la averg\chord{E}onzó.\\
+Y no supo\hspace{0.5em}\chord{E$\downarrow$ $\downarrow$}\hspace{0.5em} limpiar el cieno,\chord{Am $\downarrow$ $\downarrow$}\\
+\chord{*Dm}que la mal\chord{F}dad le arro\chord{E}jó.\\
+\end{verse}
+\textbf{[Refrein]}
+\end{song}

@@ -1,0 +1,69 @@
+\begin{song}{Piel Canela}
+\rhythmandkey[\nicefrac{4}{4}]{Son}{G}
+
+\begin{instrumental}{Intro}
+\measure{Am;D7} \measure{Am;D7} \measure{G;Em} \measure{G;Em} \measure{Am;D7} \measure{Am;D7} \measure*{G$\downarrow$; $\downarrow$}
+\end{instrumental}
+
+\begin{verse}{Couplet 1}
+  Que se \chord{Am}quede el infi\chord{D7}nito sin es\chord{G}trellas\hspace{3em}\chord{Em}
+  \\
+  y que \chord{Am}pierda el ancho \chord{D7}mar su inmensi\chord{G}dad,
+  \\
+  pero el \chord{B7}negro de tus ojos - que no \chord{Em}muera
+  \\
+  y el ca\chord{Am}nela de tu piel se quede i\chord{G$\downarrow$}gual.
+\end{verse}
+
+\begin{verse}{Couplet 2}
+  Si per\chord{Am}diera el arco \chord{D7}iris su be\chord{G}lleza\hspace{3em}\chord{Em}
+  \\
+  y las \chord{Am}flores su per\chord{D7}fume y su co\chord{G}lor
+  \\
+  no se\chord{B7}r\'{\i}a tan inmensa mi tris\chord{Em}teza
+  \\
+  como a\chord{Am}quella de quedarme sin tu a\chord{D7$\downarrow$}mor.
+\end{verse}
+
+\begin{verse}{Refrein}
+  Me importas \chord{Am}t\'{u}, y \chord{D7}t\'{u}, y \chord{Am}t\'{u},  \\
+  y \chord{D7}solamente \chord{G}t\'{u}, y \chord{Em}t\'{u}, y \chord{G$\downarrow$}t\'{u}.  \\
+  Me importas \chord{Am}t\'{u}, y \chord{D7}t\'{u}, y \chord{Am}t\'{u},  \\
+  y \chord{D7}nadie m\'{a}s que \chord{G}t\'{u}.
+\end{verse}
+
+\begin{verse}{Solo}
+  Ojos \chord{E7}negros, piel canela,  \\
+  que me \chord{Am}llegan a desespe\chord{D7$\downarrow$}rar.  \\
+  Me importas \chord{Am}t\'{u}, y \chord{D7}t\'{u}, y \chord{Am}t\'{u},  \\
+  y \chord{D7}solamente \chord{G}t\'{u}\hspace{2em}\chord{Em}\hspace{2em}\chord{G$\downarrow$}\\
+  Me importas \chord{Am}t\'{u}, y \chord{D7}t\'{u}, y \chord{Am}t\'{u},\\
+  y \chord{D7}nadie m\'{a}s que \chord{G}t\'{u}.
+\end{verse}
+
+\textbf{Couplet} (intrumentaal)\\
+\textbf{Refrein}\\
+\textbf{Solo}
+\end{song}
+\begin{translation}
+Het oneindige mag zonder sterren zijn en de weidse zee zijn\\
+en de weidse zee zijn onmetelijkheid verliezen,\\
+Maar het zwarte in je ogen - zal niet sterven\\
+en het kaneel van je huid blijft gelijk.\\
+\vspace*{1\baselineskip}
+Als de regenboog zijn schoonheid verloor,\\
+en de bloemen hun geur en kleur\\
+dan zou ik niet zo verdrietig zijn,\\
+als wanneer ik zonder jouw liefde zou worden gelaten.\\
+Ik geef om jou, om jou, om jou,\\
+En alleen jou, om jou, om jou.\\
+Ik geef om jou, om jou, om jou,\\
+en niemand meer dan jou.\\
+\vspace*{1\baselineskip}
+Zwarte ogen, kaneelhuidje,\\
+die laten me wanhopen.\\
+Ik geef om jou, om jou, om jou,\\
+en alleen jou.\\
+Ik geef om jou, om jou, om jou,\\
+en niemand meer dan jou. 
+\end{translation}

@@ -1,0 +1,39 @@
+\begin{song}{Naranjitay}
+\rhythmandkey{Huayno}{Em}
+
+\begin{instrumental}{Intro}
+\measure{D7}\measure{}\measure{}\measure{G}\measure{}\measure{}\measure{B7}\measure{}\measure{}
+\measure{Em}\measure{}\measure{}
+\end{instrumental}
+
+
+\begin{verse}{Couplet 1}
+\chord{Em}Naranji\chord{G}tay, \chord{B7}pinta pinti\chord{Em}tay. \textbf{2x}\\
+\chord{D7}Te he de robar de tu quinta,\\
+\chord{G}si no es esta nochechita,\\
+\chord{B7}Ma\~nana por la ma\~nani\chord{Em (E7 eerste keer)}ta.
+\end{verse}
+
+\textbf{[Intro]}\\
+
+\begin{verse}{Couplet 2}
+\chord{Em}A lo le\chord{G}jos, \chord{B7}se te divi\chord{Em}sa. \textbf{2x}\\
+\chord{D7}La punta de tu enaguita,\\
+\chord{G}la boca se me hace aguita,\\
+\chord{B7}y el corazon me palpi\chord{Em (E7 eerste keer)}ta.
+\end{verse}
+
+\textbf{[Intro]}\\
+
+
+\begin{verse}{Couplet 3}
+\chord{Em}Tus herma\chord{G}nos, \chord{B7}mis cu\~nadi\chord{Em}tos. \textbf{2x}\\
+\chord{D7}Tu papa sera mi suegro,\\
+\chord{G}tu mama sera mi suegra,\\
+\chord{B7}y tu la prenda mas queri\chord{Em (E7 eerste keer)}da.
+\end{verse}
+
+\begin{verse}{Einde}
+\chord{B7}y tu la prenda mas queri\chord{Em (E7 eerste keer)}da. \hspace{3em} \chord{Em$\downarrow$}\hspace{1em} \chord{B7$\downarrow$}\hspace{1em} \chord{Em$\downarrow$}\hspace{1em}.
+\end{verse}
+\end{song} 

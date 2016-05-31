@@ -1,0 +1,43 @@
+\begin{song}{Fonseca}
+\rhythmandkey[\nicefrac{3}{4}]{Vals}{Em}
+
+\begin{verse}{Intro}
+Gitaar zet in Em, na inval banduria, hetzelfde als couplet 1
+\end{verse}
+\begin{verse}{Couplet 1}
+Las \chord{Em}calles están mojadas\\
+y parece que llo\chord{B7}vió.\\
+Son lágrimas de una niña,\\
+de una mujer que llo\chord{Em}ró.\\
+\end{verse}
+
+\begin{verse}{Refrein}
+\chord{Em}Triste y sola, sola se queda Fon\chord{B7}seca.\\
+Triste y llorosa queda la universi\chord{Em}dad.\\
+Y los libros, y los libros empe\chord{Am}ñados\\
+en el \chord{Em}monte, \chord{B7}en el monte de pie\chord{Em}dad.\\
+\end{verse}
+
+\begin{verse}{Couplet 2}
+No te a\chord{Em}cuerdas cuando te decía\\
+a la pálida luz de la \chord{B7}luna:\\
+\chord{}" Yo no puedo querer más que a una,\\
+y esa una, mi vida, eres \chord{Em}tú ."\\
+\end{verse}
+
+\textbf{[refrein]}\\
+\end{song}
+\begin{translation}
+De straten zijn nat\\
+en het lijkt of het geregend heeft.\\
+Het zijn de tranen van een meisje,\\
+van een vrouw die gehuild heeft.\\\vspace{1em}
+Triest en verlaten, verlaten blijft Fonseca achter.\\
+Triest en treurig blijft de universiteit achter.\\
+En de boeken, de boeken zijn verpand\\
+in het pandjeshuis.\\\vspace{1em}
+Herinner je je niet meer,\\
+dat ik in het bleke maanlicht tegen je zei:\\
+"\hspace{0.1em}Ik kan maar van één houden,\\
+en die ene, mijn schatje, ben jij."\\
+\end{translation}

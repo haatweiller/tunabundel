@@ -1,0 +1,74 @@
+\begin{song}{La Paloma}
+\rhythmandkey[\nicefrac{4}{4}]{Tango}{A}\rhytmandkey{Pasadoble}{A}
+
+\textbf{Slagje:}
+
+\begin{tabular}{llllllll}
+  \textbf{Tel} & \textbf{1} &  & \textbf{2} &  & \textbf{3} &  & \textbf{4} \\
+  \textbf{Plukken} &  &  &  & $\downarrow$ & $\downarrow$ &  &  \\
+  \textbf{Basnoot} & \textbf{x} &  &  &  &  &  & \textbf{x} \\
+\end{tabular}
+
+\begin{instrumental}{Intro}
+\measure[:]{A}\measure{}\measure{E}\measure{}[:]\measure{A\underline{52 54 52}} \measure*{\underline{50}}
+%dit moet nog verder afgemaakt worden maar geen zin in
+\end{instrumental}
+
+\begin{verse}{Couplet}
+Cuan\chord{A}do sal\'{\i} de la Habana, !`valgame \chord{E}Dios!.
+\\
+Nadie me ha visto salir, sino fu\'{\i} \chord{A}yo.
+\\
+Y unalinda guachinanga, que si se\chord{E}\~{n}or
+\\
+que se vino tras de m\'{\i}, y me dijo a\chord{A}di\'{o}s.
+\end{verse}
+
+\begin{verse}{Brug}
+Si \chord{A}a tu ventana llega una pa\chord{E7}loma,
+\\
+tr\'{a}tala con cari\~{n}o, que es mi per\chord{A}sona.
+\\
+Cu\'{e}ntale mis amores, bien de mi \chord{E7}vida,
+\\
+cor\'{o}nala de flores, que es cosa \chord{A}mia. \hspace{3em}(rust)
+\end{verse}
+
+\begin{verse}{Refrein}
+!`Ay! chinita que \chord{A}s\'{\i}, !`ay! que dame tu a\chord{E7}mor
+\\
+!`Ay! que vente conmigo, chinita,\chord{} %leeg chord is toegevoegd, omdat het anders lelijk is
+\\
+adonde vivo \chord{A}yo. \hspace{3em}(rust)
+\\
+\vspace*{1\baselineskip}
+!`Ay! chinita que \chord{A}s\'{\i}, !`ay! que dame tu a\chord{E7}mor \hspace{1em}(roffelen)
+\\
+!`Ay! que vente conmigo, chinita, \chord{\underline{53 52 51 52}} \hspace{5em}(rust)
+\\
+adonde vivo \chord{A}yo. \hspace{3em}(rust)
+\end{verse}
+
+Maat: $\nicefrac{2}{4}$\\
+\textbf{[Intro]}\\
+\textbf{[Couplet]}\\
+\textbf{[Refrein}
+{na solo weer $\nicefrac{4}{4}$})
+\textbf{]}
+\end{song}
+
+\begin{translation}
+Toen ik uit La Habana vertrok - God sta me bij!\\
+Zag niemand mij vertrekken, maar ik ging\\
+Maar een mooi meisje, jawel meneer\\
+liep achter mij aan en zei mij vaarwel.\\
+\vspace*{1\baselineskip}
+Als aan jouw raam een duif verschijnt\\
+behandel hem dan met liefde, want hij is mijn persoon\\
+Vertel hem over mijn liefde, liefde van mijn leven,\\
+kroon hem met bloemen, want hij is een deel van mij.\\
+\vspace*{1\baselineskip}
+Ach chineesje, jawel ach geeft mij je liefde\\
+Ach kom met mij mee, chineesje\\
+naar waar ik woon.
+\end{translation}

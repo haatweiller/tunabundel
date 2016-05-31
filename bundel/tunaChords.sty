@@ -2,7 +2,7 @@
 %% This file tunaChords.sty 
 %% is writen by Michael Heidweiller for
 %% The tuna bundle
-%% date of last modification 4-10-2015
+%% date of last modification 18-04-2015
 %%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -29,24 +29,54 @@
 \RequirePackage{float}
 \RequirePackage{colortbl}
 \RequirePackage{comment}
+\RequirePackage[pdfpagelayout=TwoPageRight]{hyperref}
+\RequirePackage[toc]{multitoc}
 
 %%%% Options
 \newif\ifshowtranslation\showtranslationfalse
 \DeclareOption{notranslation}{\showtranslationfalse}
 \DeclareOption{translation}{\showtranslationtrue}
 
+\newif\iffancytoc\fancytocfalse
+\DeclareOption{simpletoc}{\fancytocfalse}
+\DeclareOption{fancytoc}{\fancytoctrue}
+
 \newif\if@nocolor\@nocolorfalse
 \DeclareOption{color}{
-	\definecolor{default}{rgb}{1.0,0,0}
+	\definecolor{default}{rgb}{0,0,0}
+	\definecolor{paso_doble}{rgb}{1.0,0,0}
+	\definecolor{vals}{rgb}{0,0.75,0}
+	\definecolor{huayno}{rgb}{0,0.5,1.0}
+	\definecolor{joropo}{rgb}{0.93,0.87,0.05}
+	\definecolor{tango}{rgb}{1.0,0.27,0}
+	\definecolor{fado}{rgb}{0,0.5,0.5}
+	\definecolor{bolero}{rgb}{0.55,0,0.55}
+	\definecolor{son}{rgb}{1.0,0.55,0}
+	\definecolor{takirari}{rgb}{1.0,0.65,0}
+	\definecolor{copla}{rgb}{0,1,0}
+	\definecolor{tropical}{rgb}{1.0,0.84,0}
+	\definecolor{beca}{rgb}{1.0,0,0}
 	\@nocolorfalse
 }
 
 \DeclareOption{bw}{
 	\definecolor{default}{rgb}{0,0,0}
+	\definecolor{paso_doble}{rgb}{0,0,0}
+	\definecolor{vals}{rgb}{0,0,0}
+	\definecolor{huayno}{rgb}{0,0,0}
+	\definecolor{joropo}{rgb}{0,0,0}
+	\definecolor{tango}{rgb}{0,0,0}
+	\definecolor{fado}{rgb}{0,0,0}
+	\definecolor{bolero}{rgb}{0,0,0}
+	\definecolor{son}{rgb}{0,0,0}
+	\definecolor{takirari}{rgb}{0,0,0}
+	\definecolor{copla}{rgb}{0,0,0}
+	\definecolor{tropical}{rgb}{0,0,0}
+	\definecolor{beca}{rgb}{0,0,0}
 	\@nocolortrue
 }
 
-\ExecuteOptions{color,translation}
+\ExecuteOptions{color,translation, simpletoc}
 \ProcessOptions\relax
 
 %% counters
@@ -77,6 +107,9 @@
 \newlength{\myoddoffset}
 \setlength{\myoddoffset}{\marginparwidth plus \marginparsep}
 
+\newlength{\vnoffset}
+\setlength{\vnoffset}{-12pt}
+
 \setlength{\arrayrulewidth}{1pt}
 
 \makeatletter
@@ -84,19 +117,11 @@
 \makeatother
 
 % song header added to TOC and with number
-\DeclareDocumentEnvironment{song}{s O{default} m} {%
-	\IfBooleanTF{#1}{}{
-		\addcontentsline{toc}{section}{\if@nocolor
-			\arabic{songs}. #3
-		\else
-			\textcolor{#2}{\arabic{songs}. #3}
-		\fi}}
-	\vspace{-12pt}
-	
+\DeclareDocumentEnvironment{song}{s O{default} m} {%	
 	% rhythm command
 	\DeclareDocumentCommand\rhythmandkey{O{\nicefrac{2}{4}} m m} {%
 		\rmfamily
-		\vspace{-12pt}\hspace{-12pt}%
+		\vspace{-12pt}\hspace{\vnoffset}%
 		\scriptsize%
 		(\emph{\textbf{##1} ##2} in ##3)\par%
 		\normalsize\normalfont}
@@ -108,7 +133,7 @@
 	
 	%verse command
 	\DeclareDocumentEnvironment{verse}{m}{%
-		{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{##1}}\vspace{-24pt}}
+		{\vspace{0pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{\small{##1}}}\vspace{-20pt}}
 		\list{}{\addtolength{\leftmargin}{\vindent}}%
 			\item[]%
 	}{\endlist}
@@ -116,7 +141,7 @@
 	\DeclareDocumentEnvironment{instrumental}{m}{%
 		\FPeval\witdhdim{\stripunit\instrumentalwidth / 8}%
 		\setcounter{measures}{0}
-		\hspace{-12pt}\textbf{##1}\\
+		\hspace{\vnoffset}\textbf{##1}\\
 		\begin{tabular}[!htbp]{| p{\witdhdim pt} | *{7}{p{\witdhdim pt} |}}%
 	}{\end{tabular}}
 	
@@ -125,7 +150,10 @@
 		\ProcessList{##3}{ \insertitem }%
 		\IfNoValueF{##4}{\textbf{##4}}
 		\stepcounter{measures}%
-		\IfBooleanF{##1}{
+		\IfBooleanTF{##1}{
+				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
+				\setcounter{measures}{0}%
+		}{
 			\ifnumequal{\themeasures}{8}{%
 				\\\arrayrulecolor{white}\hline\arrayrulecolor{black}%
 				\setcounter{measures}{0}%
@@ -133,7 +161,15 @@
 		}
 	}%
 	\DeclareDocumentCommand\insertitem{m}{\footnotesize\textbf{##1}\normalsize\hfill}%
-	
+
+	\phantomsection
+	\IfBooleanTF{#1}{}{
+		\addcontentsline{toc}{section}{\if@nocolor
+			\arabic{songs}. #3
+		\else
+			\textcolor{\iffancytoc #2\else default\fi}{\arabic{songs}. #3}
+		\fi}}
+	\vspace{-12pt}	
 	\begin{center}%
 	\LARGE %
 	\if@nocolor
@@ -146,7 +182,11 @@
 }{\IfBooleanTF{#1}{}{\stepcounter{songs}}\clearpage}
 
 \ifshowtranslation
-  \DeclareDocumentEnvironment{translation}{s}{\textbf{Vertaling:}\\}{\IfBooleanTF{#1}{\cleardoublepage}{\clearpage}}
+  \DeclareDocumentEnvironment{translation}{s}{%
+  	{\vspace{12pt}\hspace{\vnoffset}\makebox[0pt][l]{\textbf{Vertaling:}}\vspace{-24pt}}
+  	\list{}{\addtolength{\leftmargin}{\vindent}}%
+		\item[]%
+  	}{\endlist\IfBooleanTF{#1}{\cleardoublepage}{\clearpage}}
 \else
   \excludecomment{translation}
 \fi
@@ -157,9 +197,9 @@
 \renewcommand{\headrule}{
 	\setlength\@tempdima{0pt}
 	\addtolength{\@tempdima}{\headwidth}
-	\textcolor{default}{\hspace{-100pt},\hrule\@height\headrulewidth\@width\@tempdima}
+	\textcolor{beca}{\hspace{-100pt},\hrule\@height\headrulewidth\@width\@tempdima}
 	\textcolor{black}{\hrule\@height\headrulewidth\@width\@tempdima}
-	\textcolor{default}{\hrule\@height\headrulewidth\@width\@tempdima}
+	\textcolor{beca}{\hrule\@height\headrulewidth\@width\@tempdima}
 }
 \makeatother
 
@@ -169,9 +209,9 @@
 \renewcommand{\footrule}{
 	\setlength\@tempdima{0pt}
 	\addtolength{\@tempdima}{\headwidth}
-	\textcolor{default}{\hrule\@height\footrulewidth\@width\@tempdima}
+	\textcolor{beca}{\hrule\@height\footrulewidth\@width\@tempdima}
 	\textcolor{black}{\hrule\@height\footrulewidth\@width\@tempdima}
-	\textcolor{default}{\hrule\@height\footrulewidth\@width\@tempdima}
+	\textcolor{beca}{\hrule\@height\footrulewidth\@width\@tempdima}
 }
 \makeatother
 
@@ -182,7 +222,7 @@
 	\fancyheadoffset[loh,reh]{\marginparsep}
 	\fancyfootoffset[lef,rof]{\myoddoffset}
 	\fancyfootoffset[lof,ref]{\marginparsep}
-	\fancyhead[LE]{\hspace{2pt}\textbf{Cancions de Tuna}\hspace{2pt}}
+    \fancyhead[LE]{\hspace{2pt}\textbf{Cancionero de Tuna}\hspace{2pt}}
 	\fancyhead[RO]{\hspace{2pt}\textbf{Tuna Ciudad de Luz}\hspace{2pt}}
 	\fancyfoot[LE,RO]{\hspace{2pt}\emph{\thepage}\hspace{2pt}}
 }
@@ -195,5 +235,11 @@
 % commands for the font
 \renewcommand*{\familydefault}{\sfdefault} %set to sans serif
 \renewcommand*\sfdefault{phv}
+
+% hyperref settings
+\hypersetup{bookmarks=true, unicode=true, pdftoolbar=false, pdfmenubar=true, pdffitwindow=true, pdfstartview={FitH}, pdfsubject={Muziekbundel van TCL}, pdfcreator={Tuna Ciudad de Luze}, pdfproducer={TunaTunes}, pdfnewwindow=true, colorlinks=true, linkcolor=red, citecolor=green, filecolor=magenta, urlcolor=cyan}
+
+% setting amount of table of content columns
+\renewcommand*{\multicolumntoc}{2}
 
 \endinput

@@ -1,0 +1,63 @@
+\begin{song}[pase_doble]{Aquí esta la Tuna}
+\rhythmandkey{Paso doble}{A}
+\begin{instrumental}{Intro}
+\measure{bandurria} \measure{A} \measure{} \measure{;\underline{64 62}}
+\measure{E} \measure{} \measure{} \measure{;\underline{62 64}}
+\measure{A} \measure{} \measure{} \measure{\underline{64 62}}
+\measure{E} \measure{} \measure{} \measure{;\underline{62 64}} \measure{A} \measure{} \measure*{A$\downarrow$}
+\end{instrumental}
+
+\begin{verse}{Couplet 1}
+Aqu\'{i} \chord{A}est\'{a} la \chord{E}tuna que con su ale\chord{A}gría,\\
+recorre las calles con una can\chord{E}ción.\\
+\chord{}Y con sus guitarras, (y con sus guitarras)\\
+y con su alegr\'{i}a alegre la vida de la pobla\chord{|A \hspace{3em} | \hspace{4em} | A$\downarrow$}ción.
+\end{verse}
+
+\begin{verse}{Couplet 2}
+Son \chord{A}los estu\chord{E}diantes, muchachos de \chord{A}broma,\\
+de buenas palabras y gran cora\chord{E}zón.\\
+\chord{}Y son trovadores, (y son trovadores)\\
+\chord{}que llevan en notas, palabras, muchachas,\\
+un poco de a\chord{A$\downarrow$}mor.\hspace{1em} \chord{E$\downarrow$}\hspace{2em}\chord{A$\downarrow$}
+\end{verse}
+
+\begin{instrumental}{Intermezzo}
+\measure{bandurria} \measure{A} \measure{} \measure{;\underline{64 62}}
+\measure{E} \measure{} \measure{} \measure{;\underline{62 64}}
+\measure{A} \measure{} \measure{} \measure{\underline{64 62}}
+\measure{E} \measure{} \measure{} \measure{;\underline{62 64}}  \measure*{E$\downarrow\downarrow\downarrow$}\end{instrumental}
+
+\begin{verse}{solo}
+Canta una copla la tuna. (¡OLE!)
+\end{verse}
+\clearpage
+\begin{verse}{Refrein}
+\chord{A}\hspace{1em}La copla del ronda\chord{E}dor.\\
+Canta una copla la \chord{A}tuna,\\
+para que salgas mo\chord{E}rena\\
+a ver \chord{D}a tu trova\chord{A}dor.\\
+para que salgas mo\chord{E}rena (*¡que buena!)\hspace{2em} * alleen laatste keer\\
+a ver \chord{D}a tu trova\chord{A$\downarrow$}dor.\chord{E$\downarrow$}\hspace{1em}\chord{A$\downarrow$}
+\end{verse}
+
+\textbf{[Intermezzo]}\\
+\textbf{[Solo]}\\
+\textbf{[Refrein]}\\
+\begin{translation}
+Hier is de tuna die met haar plezier,\\
+en een liedje door de straten loopt.\\
+En met haar gitaren\\
+en met haar plezier de mensen blij maakt.\\\vspace{1em}
+Het zijn de studenten, jongens die van een geintje houden,\\
+die mooi kunnen praten, en een groot hart hebben.\\
+En het zijn troubadours,\\
+die een beetje liefde brengen\\
+in hun tonen en woorden, aan meisjes.\\\vspace{1em}
+De tuna zingt een lied. OLE !\\\vspace{1em}
+Het lied van de straatmuzikant.\\
+De tuna zingt een lied,\\
+opdat je naar buiten komt meisje,\\
+om naar je troubadour te kijken.
+\end{translation}
+\end{song}

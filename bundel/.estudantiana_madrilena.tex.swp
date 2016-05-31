@@ -1,0 +1,45 @@
+\begin{song}[paso_doble]{Estudiantina Madrileña}
+\rhythmandkey{Paso doble}{Em/E}
+
+\begin{instrumental}{Intro}
+Opmaat bandurria
+\measure{G} \measure{} \measure{} \measure{D7} \measure{} \measure{} \measure{} \measure*{G}
+\measure{} \measure{E7} \measure{} \measure{Am} \measure{} \measure{G} \measure{D7} \measure*{G$\downarrow$}
+\measure{\underline{63 62 63 50 52 53}} \measure{B7} \measure*{}
+\end{instrumental}
+
+\begin{verse}{Couplet 1}
+\chord{B7}\hspace{2em} Por las calles de Madrid \chord{\underline{60 62 63 52 63 62}}\\
+\chord{Em}\hspace{2em} Bajo la luz de la \chord{B7}luna,\\
+De Cascorro a Chambe\chord{Am}rí,\\
+Pasa rondando la \chord{Em}tuna.\\
+\end{verse}
+
+\begin{verse}{Couplet 2}
+Su alegría y buen hu\chord{E7}mor\\
+Son en la noche abri\chord{Am}leña\\
+Como un requiebro de a\chord{Em}mor (de amor, de amor)\\
+A la mujer madri\chord{E}leña.\\
+\end{verse}
+
+\begin{verse}{Refrein 1}
+Y asómate, asómate al balcón
+Carita de azucena,
+Y así verás que pongo en mi canción
+Suspiros de verbena.
+Adórnate ciñéndote un mantón
+De la China, la China,
+Asómate, asómate al balcón
+
+A ver la estudiantina.
+\end{verse}
+
+\textbf {Intro} \\
+\textbf {Coupletten}\\
+\vspace{1.25ex}
+\textbf{Einde} of: \textbf{ No me caso}\\
+\begin{verse}{Einde}
+para lle\chord{D}varla a bai\chord{A7}lar al cuar\chord{D}tel.\\
+para lle\chord{D}varla a bai\chord{A7}lar al cuar\chord{D}tel.\\
+\end{verse}
+\end{song}

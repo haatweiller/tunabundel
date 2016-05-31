@@ -1,0 +1,43 @@
+\begin{song}{Alma llanera}
+\rhythmandkey[\nicefrac{6}{8}]{Joropo}{Am/A}
+Percussie\\
+Cuatro (\chord*{Am} \chord*{E})\\
+Bas\\
+Basloopje gitaar (zie partij)\\
+
+\begin{instrumental}{}
+\measure[:]{A} \measure{D} \measure{E} \measure{}[:] \measure{A} \measure{} \measure{E} \measure{} \measure{A$\downarrow$}
+\end{instrumental}
+
+\begin{verse}
+Yo naci en esta ribera del a\_\chord{\underline{50}}rau\_\chord{\underline{64}}ca vi\_\chord{\underline{62}}  bra\chord{E}dor. \chord{\underline{52}}\hspace{1em}  \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  Soy hermona de la es\chord{E}puma  \chord{\underline{52}}\hspace{1em} \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  de las garzas de las rosas.  \chord{\underline{52}}\hspace{1em} \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  Soy Hermona de la es\chord{E}puma, de las garzas de las \chord{A}rosas\\
+y del \chord{E}sol, y del sol.  \chord{A$\downarrow$} \hspace{2em}\\
+\end{verse}
+
+\begin{verse}
+Me arullo la viva diana de la \chord{\underline{50}}bri\_\chord{\underline{64}}sa en el \chord{62}  pal\_\chord{E}mar.  \chord{\underline{52}}\hspace{1em} \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  Y por eso tengo el \chord{E}alma  \chord{\underline{52}}\hspace{1em} \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  como el alma primo \chord{E}rosa.  \chord{\underline{52}}\hspace{1em} \chord{\underline{42}}\hspace{1em}  \chord{\underline{41}}\hspace{1em}\\
+\chord{D}  Y por eso tengo el alma, como el alma primo \chord{A}rosa\\
+de cris\chord{E}tal, de cristal.  \chord{A$\downarrow$}\\
+\end{verse}
+
+\begin{verse}
+Amo, canot, lloro, sue\~no,\\
+\chord{\underline{50}}con cla\_\chord{\underline{64}}ve\_les \chord{\underline{62}}de pa\_\chord{E}sion, \chord{\underline{60}}con cla\_\chord{\underline{62}}veles \chord{\underline{64}}de pa\_\chord{A}sion.\\
+Para ornar las rubias crines,\\
+\chord{\underline{50}}para or\_\chord{\underline{64}}nar las \chord{\underline{62}}rubias \chord{E}crines del \chord{\underline{60}}po\_\chord{\underline{62}}tro que \chord{\underline{64}}mon\_to \chord{A}yo.\\
+\chord{\underline{50}}Yo na\_\chord{\underline{64}}ci en es\chord{\underline{62}}ta ri\chord{E}bera \chord{\underline{60}}del a\chord{\underline{62}}rauca \chord{\underline{64}}vibra\chord{A}dor.\\
+\chord{\underline{50}}Soy her\_\chord{\underline{64}}mano \chord{\underline{62}}de la es\chord{E}puma, \chord{\underline{60}}de las \chord{\underline{62}}garzas \chord{\underline{64}}de las \chord{A}rosas  \chord{E} \\
+y del \chord{A$\downarrow$}sol.\\
+\end{verse}
+
+\textbf{couplet} (instrumentaal)\\
+\textbf{refrein}\\
+\begin{instrumental}{Einde}
+\measure{A} \measure{D} \measure{E}   \measure{A}   \measure{A$\downarrow$}  \measure{E$\downarrow$}  \measure{A$\downarrow$}
+\end{instrumental}
+\end{song}

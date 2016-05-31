@@ -1,0 +1,66 @@
+\begin{song}{Venezuela (El Adiós à la llanera)}
+\rhythmandkey[\nicefrac{6}{8}]{Joropo}{Dm}
+\begin{instrumental}{Pre-intro}
+\measure[:]{Dm} \measure{Gm} \measure*{A7}[:] (Cuatro) \\
+\measure[:]{\underline{50 52 54}} \measure{Dm} \measure{} \measure{Gm} \measure{} \measure{Dm}\measure{A} \measure{Dm} \measure{;Gm} \measure*{A}[:]
+\end{instrumental}
+
+\begin{verse}{Intro}
+|: \chord*{\underline{50 52 54}} \hspace{1em}\chord{Dm}Ah \hspace{2em} | \chord{Gm}ah \hspace{2em} | \chord{A}ah \hspace{2em} :| (3x) \hspace{1em} \chord*{\underline{50 52 54 40}} \hspace{1em}(rust)
+\end{verse}
+
+\begin{verse}{Refrein (2x)}
+\chord{}Por si acaso ya no vuelvo\\
+\chord{}me despido a la llanera,\\
+\chord{\underline{40}}Vene\chord{\underline{53}}zuela, \chord{\underline{51}}Vene\chord{A}zuela\\
+despedirme yo qui\chord{Dm}siera,\\
+\chord{Gm}pero no encuentro ma\chord{A}nera. \hspace{1em} \chord{\underline{50 52 54 40} (rust)}\\
+\end{verse}
+
+\begin{verse}{Couplet 1 (2x)}
+\chord{Dm}Si yo pudiera tener\\
+\chord{Gm}alas para volar\\
+\chord{A}como tengo un cora\chord{Dm}zón\\
+que \chord{Gm}sabe muy bien a\chord{A}mar.\\
+\end{verse}
+\begin{verse}{Couplet 2 (2x)}
+\chord{Dm}Cu\'{a}ntas veces yo quisiera\\
+\chord{Gm}que estuvieras junto a mi,\\
+\chord{A}pero no encuentro ma\chord{Dm}nera\\
+de acer\chord{Gm}carme un poco a \chord{A}ti.\hspace{2em}\chord{\underline{50 52 54} 2e keer)}
+\end{verse}
+
+\begin{verse}{Brug (2e keer de akkoorden tussen haakjes spelen)}
+Ma\chord{D(F)}\~{n}ana cuando par\chord{G(B$\flat$)}tamos\\
+un re\chord{A(C)}cuerdo te deja\chord{D$\downarrow$(F$\downarrow$)}r\'{e},\hspace{2em}\chord{G$\downarrow\downarrow$(B$\flat\downarrow\downarrow$)}\hspace{5em}\chord{A$\downarrow$(C$\downarrow$)}\\
+mis \chord{D(F)}l\'{e}grimas en tus ma\chord{G(B$\flat$)}nitas\\
+y el de\chord{A(C)}cir qu\'{e} me llevar\'{e}.\\
+\end{verse}
+\begin{verse}{Intermezzo}
+|: \chord*{\underline{50 52 54}} | \chord*{Dm} \hspace{2em} | \hspace{3.9em} | \chord*{Gm} \hspace{2em} | \hspace{4em} | \chord*{Dm} \hspace{2em} | \chord*{A} \hspace{3em} | \chord*{Dm} \hspace{2em} | \hspace{0.3em}\chord*{Gm} \hspace{2em} | \chord*{A} \hspace{2.55em} :| (2x herhalen, daarna \chord*{\underline{53 40 42}})\\
+
+\end{verse}
+
+\textbf{[Brug in F (akkoorden tussen haaktjes)]}\\
+\textbf{[Refrein + intro]}\\
+\vspace{10em}
+\end{song}
+\begin{translation}
+Voor het geval ik niet meer terugkom\\
+neem ik afscheid van het meisje uit Los Llanos.\\
+Venezuela, Venezuela\\
+ik wil geen afscheid nemen\\
+want ik weet niet hoe.\\\vspace{1em}
+Als ik toch vleugels kon hebben\\
+om mee te vliegen,\\
+zoals ik een hart heb\\
+dat heel goed kan liefhebben.\\\vspace{1em}
+Hoe vaak zou ik niet willen\\
+dat je bij me was,\\
+maar ik weet niet hoe ik\\
+een beetje dichter bij je kan komen.\\\vspace{1em}
+Morgen, als wij vertrekken\\
+laat ik een herinnering voor je achter:\\
+tranen op jouw wangen\\
+en de opmerking dat ik het wel vol zal houden. \\
+\end{translation}
