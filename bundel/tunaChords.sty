@@ -23,9 +23,13 @@
 \RequirePackage{changepage}
 \RequirePackage{ifthen}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage{xparse}
+\RequirePackage{etoolbox}
+\RequirePackage[nomessages]{fp}
+\RequirePackage{float}
+\RequirePackage{colortbl}
 
-
-
+%%%% Options
 \newif\if@nocolor\@nocolorfalse
 \DeclareOption{color}{
 	\definecolor{default}{rgb}{1.0,0,0}
@@ -40,78 +44,23 @@
 \ExecuteOptions{color}
 \ProcessOptions\relax
 
-% command for chords above the text
-\newcommand\chord[2][l]{%
-	\makebox[0pt][#1]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{#2}\\\mbox{}\end{tabular}}%
-	\normalsize}
-
-% command for chords on the text
-\WithSuffix\newcommand\chord*[1]{%
-	\textbf{#1}}  
-
-
+%% counters
 \newcounter{songs}
 \setcounter{songs}{1}
+\newcounter{measures}
 
-% song header added to TOC and with number
-\newcommand\song[2][default] {%
-	\begin{center}%
-	\LARGE %
-	\if@nocolor
-		\textbf{#2}
-	\else
-		\textcolor{#1}{\arabic{songs}. \textbf{#2}}
-	\fi
-	\end{center}
-	\addcontentsline{toc}{section}{\if@nocolor
-		\arabic{songs}. #2
-	\else
-		\textcolor{#1}{\arabic{songs}. #2}
-	\fi}%
-	\vspace{-12pt}
-	\stepcounter{songs}}
-
-% song header plain
-\WithSuffix\newcommand\song*[2][default] {%
-	\begin{center}%
-	\LARGE 
-	\if@nocolor
-		\textbf{#2}
-	\else
-		\textcolor{#1}{\textbf{#2}}
-	\fi
-	\end{center}}
-	
-% rhythm command
-\newcommand\rhythmandkey[3][\nicefrac{2}{4}] {%
-	\rmfamily
-	\vspace{-12pt}\hspace{-12pt}%
-	\scriptsize%
-	(\emph{\textbf{#1} #2} in #3)\par%
-	\normalsize\normalfont}
-
-\newlength{\vindent}
-\setlength{\vindent}{-1.5em}
-
-%verse command
-\renewenvironment{verse}[1]{%
-	{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{#1}}\vspace{-24pt}}
-	\list{}{
-		\addtolength{\leftmargin}{\vindent}}%
-		\item[]%
-}{\endlist}
-
-\newenvironment{instrumental}[1]{%
-	\newcommand{\measure}{}
-	{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{#1}}\vspace{-24pt}}
-}{}
+%% lenghts
 
 %pagestyle
+\newlength{\vindent}
+\setlength{\vindent}{-1.5em}
+\newlength{\instrumentalwidth}
+\setlength{\instrumentalwidth}{336pt}
 \setlength{\parskip}{3ex}
 \setlength{\parindent}{0pt}
 \setlength{\textheight}{674pt}
 \setlength{\textwidth}{426pt}
-\setlength{\headheight}{29pt}
+\setlength{\headheight}{30.2pt}
 \setlength{\headsep}{2ex}
 \setlength{\voffset}{0pt}
 \setlength{\topmargin}{-25pt}
@@ -123,6 +72,69 @@
 \newlength{\myoddoffset}
 \setlength{\myoddoffset}{\marginparwidth plus \marginparsep}
 
+\setlength{\arrayrulewidth}{1pt}
+
+\makeatletter
+\newcommand*{\stripunit}[1]{\strip@pt#1}
+\makeatother
+
+% song header added to TOC and with number
+\DeclareDocumentEnvironment{song}{s O{default} m} {%
+	\IfBooleanTF{#1}{}{
+		\addcontentsline{toc}{section}{\if@nocolor
+			\arabic{songs}. #3
+		\else
+			\textcolor{#2}{\arabic{songs}. #3}
+		\fi}}
+	\vspace{-12pt}
+	
+	% rhythm command
+	\DeclareDocumentCommand\rhythmandkey{O{\nicefrac{2}{4}} m m} {%
+		\rmfamily
+		\vspace{-12pt}\hspace{-12pt}%
+		\scriptsize%
+		(\emph{\textbf{##1} ##2} in ##3)\par%
+		\normalsize\normalfont}
+
+	\DeclareDocumentCommand\chord{m}{\makebox[0pt][l]{\begin{tabular}[b]{@{}l@{}}\footnotesize\textbf{##1}\\
+	\mbox{}\end{tabular}}\normalsize}
+	
+	%verse command
+	\DeclareDocumentEnvironment{verse}{m}{%
+		{\vspace{12pt}\hspace{-12pt}\makebox[0pt][l]{\textbf{##1}}\vspace{-24pt}}
+		\list{}{\addtolength{\leftmargin}{\vindent}}%
+			\item[]%
+	}{\endlist}
+	%instrumental command	
+	\DeclareDocumentEnvironment{instrumental}{m}{%
+		\FPeval\witdhdim{\stripunit\instrumentalwidth / 8}%
+		\setcounter{measures}{0}
+		\hspace{-12pt}\textbf{##1}\\
+		\begin{tabular}[!htbp]{| p{\witdhdim pt} | *{7}{p{\witdhdim pt} |}}%
+	}{\end{tabular}}
+	
+	\DeclareDocumentCommand{\measure}{s >{\SplitList{;}}m}{%
+		\ProcessList{##2}{ \insertitem }%
+		\stepcounter{measures}%
+		\ifnumequal{\themeasures}{8}{%
+			\IfBooleanTF{##1}{}{\\\arrayrulecolor{white}\hline\arrayrulecolor{black}}%
+			\setcounter{measures}{0}%
+		}{&}%
+	}%
+	\DeclareDocumentCommand\insertitem{m}{\textbf{##1}\hfil}%
+	
+
+
+	\begin{center}%
+	\LARGE %
+	\if@nocolor
+		\IfBooleanTF{#1}{}{\arabic{songs}. }\textbf{#3}
+	\else
+		\textcolor{#2}{\IfBooleanTF{#1}{}{\arabic{songs}. } \textbf{#3}}
+	\fi
+	\end{center}
+	
+}{\IfBooleanTF{#1}{}{\stepcounter{songs}}\clearpage}
 
 % lijn bij header
 \renewcommand{\headrulewidth}{1.8pt}
