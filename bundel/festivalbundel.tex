@@ -1,8 +1,11 @@
 \documentclass[10pt,a4paper,twoside]{article}
 
 \usepackage[bw,notranslation]{tunaChords}
+\usepackage{framed}
 
 \begin{document}
+\noindent
+
 % Voorblad
 \begin{center}
 \Huge{Festivalbundel\\voor\\Eindhoven 2016}
@@ -11,12 +14,14 @@
 \tableofcontents
 \vspace{1em}
 \hfill\small{Samengestelt: \today}
+\clearpage
+
 % Voeg hier meer liedjes aan toe plus aanpassen volgorde
-\input{songs/tuna_de_ingenieros}
-\input{songs/poco_a_poco}
-\input{songs/bikina}
-\input{songs/torero}
-\input{songs/alma_llanera}
-\input{songs/don_quijote}
-\input{songs/san_cayetano}
+\input{songs/tuna_de_ingenieros}\null\newpage
+\input{songs/poco_a_poco}\newpage
+{\input{songs/bikina}}\newpage
+{\input{songs/torero}}\newpage
+\input{songs/alma_llanera}\null\newpage
+\input{songs/don_quijote}\newpage
+\input{songs/san_cayetano}\newpage
 \end{document}
