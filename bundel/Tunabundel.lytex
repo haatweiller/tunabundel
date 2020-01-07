@@ -9,7 +9,7 @@
 }
 
 \title{Tunabundel}
-\author{M. Heidweiller,  Y.Haenen}
+\author{M. Heidweiller,  Y. Haenen}
 \date{\today}
 
 \makeatletter
@@ -47,12 +47,14 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/caja_de_musica}\notition{8}
 \input{songs/calatayud}\notition{8}
 \input{songs/calles_sin_rumbo}\notition{8}
+\input{songs/candidito}\notition{8}
 \input{songs/cantar_de_emigracao}\notition{8}
 \input{songs/cantinero_de_cuba}\notition{8}
 \input{songs/chan_chan}\notition{8}
 \input{songs/cielito}\notition{8}
 \input{songs/cintas_de_mi_capa}\notition{8}
 \input{songs/clavelitos}\notition{8}
+\input{songs/compostelana}\notition{8}
 \input{songs/despierta}\notition{8}
 \input{songs/don_quijote}\notition{8}
 \input{songs/e-10}\notition{8}
@@ -72,6 +74,7 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/julio}\notition{6}
 \input{songs/naranjitay}\notition{8}
 \input{songs/nostalgias}\notition{8}
+\input{songs/ojos}\notition{8}
 \input{songs/pajaro_choqui}\notition{8}
 \input{songs/paloma}\notition{8}
 \input{songs/parate}\notition{8}
@@ -81,6 +84,8 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/piel_canela}\notition{8}
 \input{songs/poco_a_poco}\notition{8}
 \input{songs/porompompero}\notition{8}
+\input{songs/portuguesa}\notition{8}
+\input{songs/puntas}\notition{8}
 \input{songs/quiero_ser_como_tu}\notition{8}
 \input{songs/quizas}\notition{8}
 \input{songs/recuerdos}\notition{8}
@@ -105,6 +110,7 @@ Bundel is samengesteld door Michael en Youri.
 \end{center}
 \clearpage
 \input{theory/theorie}\clearpage
+\input{theory/zangworkshop}\clearpage
 \stepcounter{section}\phantomsection\addcontentsline{toc}{section}{\Alph{section}\hspace{1em}Akkoorden}
 \lilypondfile[noindent]{theory/chords.ly}
 \input{theory/akkoorden}
