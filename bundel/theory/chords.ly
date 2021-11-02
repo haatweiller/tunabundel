@@ -16,8 +16,7 @@
 
 \sourcefilename "display-predefined-fretboards.ly"
 \sourcefileline 0
-\include "predefined-guitar-fretboards.ly"
-\version "2.16.0"
+\include "predefined-guitar-fretboards.ly"\version "2.16.0"
 
 % http://lilypond.org/doc/v2.18/Documentation/notation/common-chord-modifiers
 mychords = \chordmode {

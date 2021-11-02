@@ -9,7 +9,7 @@
 }
 
 \title{Tunabundel}
-\author{M. Heidweiller,  Y. Haenen}
+\author{M. Heidweiller,  Y.Haenen}
 \date{\today}
 
 \makeatletter
@@ -36,64 +36,46 @@ Bundel is samengesteld door Michael en Youri.
 \input{songs/aguas}\notition{8}
 \input{songs/alma_corazon_y_vida}\notition{8}
 \input{songs/alma_llanera}\notition{8}% moet instrumetale uitleg nog worden gedaan
-\input{songs/amalia_rosa}\notition{8}
 \input{songs/amor_de_mis_amores}\notition{8}
 \input{songs/aqui_esta}\notition{8}
 \input{songs/aurora}\notition{8} 
 \input{songs/la_banda}\notition{8}
-\input{songs/besame_mucho}\notition{8}
-\input{songs/beso}\notition{8}
+\input{songs/besame}\notition{8}
 \input{songs/bikina}\notition{8}
-\input{songs/caja_de_musica}\notition{8}
 \input{songs/calatayud}\notition{8}
 \input{songs/calles_sin_rumbo}\notition{8}
-\input{songs/candidito}\notition{8}
 \input{songs/cantar_de_emigracao}\notition{8}
-\input{songs/cantinero_de_cuba}\notition{8}
-\input{songs/chan_chan}\notition{8}
 \input{songs/cielito}\notition{8}
 \input{songs/cintas_de_mi_capa}\notition{8}
 \input{songs/clavelitos}\notition{8}
-\input{songs/compostelana}\notition{8}
 \input{songs/despierta}\notition{8}
 \input{songs/don_quijote}\notition{8}
 \input{songs/e-10}\notition{8}
 \input{songs/elsa}\notition{8}
-%\input{songs/espana_cani}\notition{8}
 \input{songs/estrellita}\notition{8}
 \input{songs/estudantiana_madrilena}\notition{8}
 \input{songs/adios}
 \input{songs/fonseca}
 \input{songs/guantanamera}\notition{8}
-\input{songs/horas_de_rondas}\notition{8}
 \input{songs/hoy_estoy_aqui}\notition{8}
-\input{songs/isa_del_candidito}\newpage
-\input{songs/luna_de_espana}\newpage
 \input{songs/manolo}\notition{8}
 \input{songs/moliendo_cafe}\notition{8}
 \input{songs/julio}\notition{6}
 \input{songs/naranjitay}\notition{8}
 \input{songs/nostalgias}\notition{8}
-\input{songs/ojos}\notition{8}
-\input{songs/pajaro_choqui}\notition{8}
 \input{songs/paloma}\notition{8}
 \input{songs/parate}\notition{8}
 \input{songs/parrandero}\notition{8}
-\input{songs/payador}\notition{8}
 \input{songs/perfidia}\notition{8}
 \input{songs/piel_canela}\notition{8}
 \input{songs/poco_a_poco}\notition{8}
 \input{songs/porompompero}\notition{8}
-\input{songs/portuguesa}\notition{8}
-\input{songs/puntas}\notition{8}
 \input{songs/quiero_ser_como_tu}\notition{8}
-\input{songs/quizas}\notition{8}
 \input{songs/recuerdos}\notition{8}
 \input{songs/rondalla}\notition{8}
 \input{songs/san_cayetano} \notition{8}
 \input{songs/siete_amores}\notition{8}
 \input{songs/sirena}\notition{8}
-%\input{songs/tequila}\notition{8}
 \input{songs/torero}\notition{8}
 \input{songs/tuna_compostelana}\notition{8}
 \input{songs/tuna_de_ingenieros}\notition{8}
@@ -110,7 +92,6 @@ Bundel is samengesteld door Michael en Youri.
 \end{center}
 \clearpage
 \input{theory/theorie}\clearpage
-\input{theory/zangworkshop}\clearpage
 \stepcounter{section}\phantomsection\addcontentsline{toc}{section}{\Alph{section}\hspace{1em}Akkoorden}
 \lilypondfile[noindent]{theory/chords.ly}
 \input{theory/akkoorden}
